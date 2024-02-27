@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMIN PANEL</title>
+  <!-- google font start -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- google font end -->
+  <script src="https://kit.fontawesome.com/3f4c7459cb.js" crossorigin="anonymous"></script>
+  <!-- css file start -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/smooth-scrollbar.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/google-metarial.css">
+  <link rel="stylesheet" href="css/supplier.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- css file end -->
+</head>
+
+<body class="sidebar">
+  <!-- sidebar navigation start -->
+  <section class="dashboard">
+    <div class="toggle-overlay d-block d-lg-none"></div>
+    <!-- top header start -->
+    <div data-v-251ab46d="" data-v-f0f01d2e="" class="top-header" style="background-color: rgb(97, 218, 255)">
+      <div data-v-251ab46d="" class="topbar">
+        <div data-v-251ab46d="" class="row">
+          <div class="col-2 col-sm-1 col-md-1 col-lg-3 left-info-col align-self-center" data-v-251ab46d="">
+            <div class="left-info d-flex" data-v-251ab46d="">
+              <div class="mobile-control-bar d-block d-lg-none" data-v-251ab46d="">
+                <i class="fas fa-bars" aria-hidden="true" data-v-251ab46d=""></i>
+              </div>
+              <div class="control-bar d-none" data-v-251ab46d="">
+                <i class="fas fa-bars" aria-hidden="true" data-v-251ab46d=""></i>
+              </div>
+              <div class="expand" data-v-251ab46d="">
+                <i class="fas fa-arrows-alt" aria-hidden="true" data-v-251ab46d=""></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-8 d-none d-lg-flex col-sm-7 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"
+            data-v-251ab46d="">
+            <!-- &lt;p class=&quot;text-white bold text-center&quot;&gt;{{ loggedInfo() }}&lt;/p&gt; -->
+            <!-- <p class="text-white bold text-center" data-v-251ab46d="">
+                          <span id="currentTime" data-v-251ab46d="">3:00:50 PM</span> -
+                          <span id="currentDate" data-v-251ab46d=""
+                            >Monday, February 26, 2024</span
+                          >
+                        </p> -->
+            <img data-v-22a4e926="" class="main-logo" src="https://i.ibb.co/dt6wXr5/Group-1707478059.png"
+              alt="Group-1707478059" border="0" />
+            <!-- &lt;p class=&quot;text-white bold text-center&quot;&gt;You Logged in as&lt;/p&gt; -->
+          </div>
+          <div data-v-251ab46d="" class="col-2 ms-auto col-sm-4 col-md-3 col-lg-3 right-info-col">
+            <div data-v-251ab46d=""
+              class="right-info header-right-info text-end d-flex justify-content-end align-items-center">
+              <div data-v-251ab46d="" class="profile dropdown">
+                <ul data-v-251ab46d="" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <li data-v-251ab46d="" class="me-4">Logged in as</li>
+                  <li data-v-251ab46d="" class="profile-image">
+                    <img data-v-251ab46d="" src="http://localhost/naasa-scmd/public/images/profile.jpg" alt="profile" />
+                  </li>
+                  <li data-v-251ab46d="">
+                    <span data-v-251ab46d="" class="d-none d-sm-inline-block">Nogor Solutions</span><i
+                      data-v-251ab46d="" class="px-1 fas fa-angle-down" aria-hidden="true"></i>
+                  </li>
+                </ul>
+                <ul data-v-251ab46d="" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li data-v-251ab46d="">
+                    <a data-v-251ab46d="" href="http://localhost/naasa-scmd/admin/siteSetting/1/edit"><i
+                        data-v-251ab46d="" class="fa fa-cog text-aqua" aria-hidden="true"></i>Settings</a>
+                  </li>
+                  <li data-v-251ab46d="">
+                    <a data-v-251ab46d="" href="http://localhost/naasa-scmd/admin/admin/1"><i data-v-251ab46d=""
+                        class="fa fa-user-o" aria-hidden="true"></i>Profile</a>
+                  </li>
+                  <li data-v-251ab46d="">
+                    <a data-v-251ab46d="" href="javascript:void(0)"><i data-v-251ab46d="" class="fas fa-sign-out-alt"
+                        aria-hidden="true"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar part start -->
+    </div>
+    <!-- top header end -->
+    <div data-v-22a4e926="" class="navigation-body shadow" style="background-color: rgb(47, 58, 78);">
+      <div data-v-22a4e926="" class="close-mobile-menu d-block d-lg-none"><i data-v-22a4e926=""
+          class="bi bi-arrow-left"></i></div>
+      <div data-v-22a4e926="" class="logo" style=""><a data-v-22a4e926="" href="/naasa-scmd/admin/dashboard"
+          class="router-link-active active" aria-current="page">
+          <img data-v-22a4e926="" class="main-logo" src="https://i.ibb.co/dt6wXr5/Group-1707478059.png"
+            alt="Group-1707478059" border="0"><img data-v-22a4e926="" class="mini-logo d-none"
+            src="https://i.ibb.co/PTHYvRG/Frame.png" alt="Frame" border="0">
+        </a></div>
+      <div class="navigation" id="my-scrollbar">
+        <div data-v-22a4e926="" class="main-menus">
+          <ul data-v-22a4e926="" id="accordion" class="accordion">
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="index.html" class="router-link-active active" data-route="dashboard.index"
+                data-lol="dashboard.index" aria-current="page"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fas fa-cog spin" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Dashboard</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="profile.html" class="" data-route="deliveryOrders.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Profiles</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="tender-notice.html" class="" data-route="gatePass.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Tender Notice</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="tender-quotation-apply.html" class=""
+                data-route="requisitions.index" data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Tender Quotation Apply</span></span></a>
+            </li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="tender-opening-board.html" class=""
+                data-route="tenders.index" data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Tender Opening Board</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="quotation-histories.html" class=""
+                data-route="admin.index" data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Quotation Histories</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Purchase Order</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="invoices.html" class="" data-route="admin.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Invoices</span></span></a></li>
+            <li data-v-22a4e926=""><a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
+                data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Change Password</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-v-22a4e926="" class="collapsed-navigation d-none">
+        <ul data-v-22a4e926="">
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fas fa-cog spin"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title"><a data-v-22a4e926="" href="/naasa-scmd/admin/dashboard"
+                    class="router-link-active active mini-dashboard" aria-current="page">Dashboard</a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i
+                  class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title"><a data-v-22a4e926="" href="/naasa-scmd/admin/deliveryOrders"
+                    class="mini-dashboard">DeliveryOrders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i
+                  class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title"><a data-v-22a4e926="" href="/naasa-scmd/admin/gatePass"
+                    class="mini-dashboard">GatePass</a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i
+                  class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title"><a data-v-22a4e926="" href="/naasa-scmd/admin/requisitions"
+                    class="mini-dashboard">Requisitions</a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i
+                  class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title"><a data-v-22a4e926="" href="/naasa-scmd/admin/tenders"
+                    class="mini-dashboard">Tenders</a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-user"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title"><a data-v-22a4e926="" href="/naasa-scmd/admin/admin"
+                    class="mini-dashboard">Admin</a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fab fa-mastodon"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title"><a href="#" class="mini-dashboard">Master Setup</a></li>
+                <li><a href="/naasa-scmd/admin/category" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Category</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-windows"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title"><a href="#" class="mini-dashboard">Contents</a></li>
+                <li><a href="/naasa-scmd/admin/content" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Content List</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fas fa-globe"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title"><a href="#" class="mini-dashboard">Website</a></li>
+                <li><a href="/naasa-scmd/admin/contacts" class=""><em><i class="fas fa-address-book"
+                        aria-hidden="true"></i></em> &nbsp; <span>Contact Us</span></a></li>
+                <li><a href="/naasa-scmd/admin/events" class=""><em><i class="fas fa-snowflake"
+                        aria-hidden="true"></i></em> &nbsp; <span>Event</span></a></li>
+                <li><a href="/naasa-scmd/admin/faq" class=""><em><i class="fas fa-book-open"
+                        aria-hidden="true"></i></em> &nbsp; <span>Faq</span></a></li>
+                <li><a href="/naasa-scmd/admin/notice" class=""><em><i class="fab fa-leanpub"
+                        aria-hidden="true"></i></em> &nbsp; <span>Notice</span></a></li>
+                <li><a href="/naasa-scmd/admin/news" class=""><em><i class="fa fa-newspaper-o"
+                        aria-hidden="true"></i></em> &nbsp; <span>News</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <!--v-if-->
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-windows"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title"><a href="#" class="mini-dashboard">Gallery / Images</a></li>
+                <li><a href="/naasa-scmd/admin/album" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Albums</span></a></li>
+                <li><a href="/naasa-scmd/admin/photo" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Photos</span></a></li>
+                <li><a href="/naasa-scmd/admin/video" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Videos</span></a></li>
+                <li><a href="/naasa-scmd/admin/slider" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Sliders</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926=""><a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-windows"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title"><a href="#" class="mini-dashboard">System Settings</a></li>
+                <li><a href="/naasa-scmd/admin/role" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>User Role</span></a></li>
+                <li><a href="/naasa-scmd/admin/menu" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Backend Menu List</span></a></li>
+                <li><a href="/naasa-scmd/admin/frontMenu" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Frontend Menu List</span></a></li>
+                <li><a href="/naasa-scmd/admin/siteSetting" class=""><em><i class="fa fa-cog text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Site Settings</span></a></li>
+                <li><a href="/naasa-scmd/admin/activityLog" class=""><em><i class="fa fa-history"
+                        aria-hidden="true"></i></em> &nbsp; <span>Activity Log</span></a></li>
+                <li><a href="/naasa-scmd/admin/module/create" class=""><em><i class="fa fa-folder text-aqua"
+                        aria-hidden="true"></i></em> &nbsp; <span>Module Create</span></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div><!-- collapsed navigation end-->
+      <div data-v-22a4e926="" class="branding text-center" style="">
+        <h6 data-v-22a4e926="" class="full-brand"> Developed By <a data-v-22a4e926=""
+            href="https://www.nogorsolutions.com/" target="_blank" class="d-block">Nogor Solutions Limited</a></h6>
+        <div data-v-22a4e926="" class="short-brand d-none"><img data-v-22a4e926=""
+            src="http://localhost/naasa-scmd/public/images/nogor-favicon.png" alt="nogo-fevicon"></div>
+      </div>
+    </div>
+    <!-- main content start -->
+    <div class="main-content-body">
+      <!-- breadcrumb start -->
+      <div data-v-584f0aa9="" data-v-f0f01d2e="" class="bread-crumb-part" style="">
+        <div data-v-584f0aa9="" class="row">
+          <div data-v-584f0aa9="" class="col-md-6 col-lg-6">
+            <!-- <div class="left-title">
+        <h3 style="text-transform: capitalize" v-if="breadcrumbs[0]">
+          {{
+            capitalize(
+              breadcrumbs[Object.keys(breadcrumbs).length - 1]["title"]
+            )
+          }}
+        </h3>
+      </div> -->
+            <div data-v-584f0aa9="" class="right-info text-start">
+              <ul data-v-584f0aa9="">
+                <li data-v-584f0aa9=""><a data-v-584f0aa9="" href="/naasa-scmd/admin/dashboard"
+                    class="router-link-active active" aria-current="page">Tender Quotation Apply</a></li>
+                <!--v-if-->
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-md-3 col-lg-3 d-flex align-items-center justify-content-center">
+    </div> -->
+          <div data-v-584f0aa9="" class="col-md-6 col-lg-6">
+            <!-- <div class="right-info text-end">
+        <ul>
+          <li>
+            <router-link :to="{ name: 'dashboard.index' }"
+              >Dashboard</router-link
+            >
+          </li>
+          <template v-if="!isDashboardRoute">
+            <li
+              v-for="(menu, index1) in breadcrumbs"
+              :key="index1"
+              :class="menu.route == $route.name ? 'active' : ''"
+              style="text-transform: capitalize"
+            >
+              <a v-if="Object.keys(breadcrumbs).length == index1 + 1">
+                {{ menu.title }}
+              </a>
+              <router-link
+                v-else-if="menu.slug"
+                :to="{
+                  name: menu.route,
+                  params: { slug: menu.slug },
+                }"
+              >
+                {{ menu.title }}
+              </router-link>
+              <router-link v-else :to="{ name: menu.route }">
+                {{ menu.title }}
+              </router-link>
+            </li>
+          </template>
+        </ul>
+      </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb end -->
+      <!-- content part start -->
+      <div class="content-part">
+
+        <div class="fieldset_ mt-4">
+          <span class="legend_">Tender Quotation Apply</span>
+
+          <div class="tender_quotation_apply">
+            <div class="top_info_">
+              <div class="row">
+                <div class="col-lg-5 align-self-center">
+                  <div class="left_info">
+                    <img data-v-22a4e926="" class="main-logo" src="https://i.ibb.co/dt6wXr5/Group-1707478059.png"
+                      alt="Group-1707478059" border="0">
+                    <h4 class="mt-3">Quotation Apply Form</h4>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="right_info">
+                    <div class="top">
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <div class="left_title">
+                            <h4><img width="30" src="https://i.ibb.co/YfpL3zd/tender.png" alt="tender" border="0">
+                              Tender Info</h4>
+                          </div>
+                        </div>
+                        <div class="col-lg-8">
+                          <div class="right_title text-end">
+                            <h4>Spare Parts For HP Air Compressor</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-2">
+                      <div class="col-lg-6">
+                        <table class="table mb-0">
+                          <tr>
+                            <th>Tender No:</th>
+                            <td>224.00254.11</td>
+                          </tr>
+                          <tr>
+                            <th>Opening Date:</th>
+                            <td>22 Feb, 2024 12:00 PM</td>
+                          </tr>
+                        </table>
+                      </div>
+                      <div class="col-lg-6">
+                        <table class="table mb-0">
+                          <tr>
+                            <th>
+                              Group:
+                            </th>
+                            <td>M</td>
+                          </tr>
+                          <tr>
+                            <th>Tender Type:</th>
+                            <td>Package</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tender_quotation_grand_total my-3">
+              <h3>Grand total <span class="text-danger">0.00</span> TK</h3>
+            </div>
+            <div class="tender_apply_accordion_area mt-3">
+              <div class="accordion_items">
+                <div class="top_title collapse_arrow d-flex justify-content-between gap-4 align-items-center">
+                  <ul class="list-unstyled">
+                    <li class="number">1</li>
+                    <li class="name">Item Name: gasket</li>
+                    <li class="name">Quantity: 32</li>
+                    <li class="price">Total Price: <span class="text-danger">0.00 TK</span></li>
+                  </ul>
+                  <div class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="main_info">
+                  <div class="main_tender_apply_form mt-0">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Unit Price (tk)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Unit price">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Brand</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Brand">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Model</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Model">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Part No.</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Part No">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Origin</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Manufacture</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Manufacturer Name</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Manufacturer Name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Production year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Wallanty year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Source of Supply</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Port of Shipment</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Delivery Time (Days)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Offer Validity</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Other features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Other features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Technical features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Technical features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="custom_file_browse">
+                          <div class="row gy-2">
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Brochure/Catalogue <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Spec Compliance State <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>OEM Certificate <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Letter of Authorization <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Technical Document <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_items">
+                <div class="top_title collapse_arrow d-flex justify-content-between gap-4 align-items-center">
+                  <ul class="list-unstyled">
+                    <li class="number">2</li>
+                    <li class="name">Item Name: gasket</li>
+                    <li class="name">Quantity: 32</li>
+                    <li class="price">Total Price: <span class="text-danger">0.00 TK</span></li>
+                  </ul>
+                  <div class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="main_info">
+                  <div class="main_tender_apply_form mt-0">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Unit Price (tk)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Unit price">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Brand</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Brand">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Model</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Model">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Part No.</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Part No">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Origin</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Manufacture</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Manufacturer Name</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Manufacturer Name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Production year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Wallanty year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Source of Supply</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Port of Shipment</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Delivery Time (Days)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Offer Validity</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Other features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Other features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Technical features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Technical features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="custom_file_browse">
+                          <div class="row gy-2">
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Brochure/Catalogue <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Spec Compliance State <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>OEM Certificate <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Letter of Authorization <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Technical Document <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_items">
+                <div class="top_title collapse_arrow d-flex justify-content-between gap-4 align-items-center">
+                  <ul class="list-unstyled">
+                    <li class="number">3</li>
+                    <li class="name">Item Name: gasket</li>
+                    <li class="name">Quantity: 32</li>
+                    <li class="price">Total Price: <span class="text-danger">0.00 TK</span></li>
+                  </ul>
+                  <div class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="main_info">
+                  <div class="main_tender_apply_form mt-0">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Unit Price (tk)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Unit price">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Brand</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Brand">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Model</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Model">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Part No.</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Part No">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Origin</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Manufacture</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Manufacturer Name</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Manufacturer Name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Production year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Wallanty year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Source of Supply</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Port of Shipment</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Delivery Time (Days)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Offer Validity</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Other features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Other features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Technical features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Technical features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="custom_file_browse">
+                          <div class="row gy-2">
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Brochure/Catalogue <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Spec Compliance State <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>OEM Certificate <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Letter of Authorization <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Technical Document <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_items">
+                <div class="top_title collapse_arrow d-flex justify-content-between gap-4 align-items-center">
+                  <ul class="list-unstyled">
+                    <li class="number">4</li>
+                    <li class="name">Item Name: gasket</li>
+                    <li class="name">Quantity: 32</li>
+                    <li class="price">Total Price: <span class="text-danger">0.00 TK</span></li>
+                  </ul>
+                  <div class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="main_info">
+                  <div class="main_tender_apply_form mt-0">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Unit Price (tk)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Unit price">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Brand</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Brand">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Model</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Model">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Part No.</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Part No">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Origin</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Manufacture</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Manufacturer Name</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Manufacturer Name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Production year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Wallanty year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Source of Supply</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Port of Shipment</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Delivery Time (Days)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Offer Validity</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Other features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Other features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Technical features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Technical features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="custom_file_browse">
+                          <div class="row gy-2">
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Brochure/Catalogue <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Spec Compliance State <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>OEM Certificate <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Letter of Authorization <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Technical Document <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion_items">
+                <div class="top_title collapse_arrow d-flex justify-content-between gap-4 align-items-center">
+                  <ul class="list-unstyled">
+                    <li class="number">5</li>
+                    <li class="name">Item Name: gasket</li>
+                    <li class="name">Quantity: 32</li>
+                    <li class="price">Total Price: <span class="text-danger">0.00 TK</span></li>
+                  </ul>
+                  <div class="arrow">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+                <div class="main_info">
+                  <div class="main_tender_apply_form mt-0">
+                    <div class="row">
+                      <div class="col-lg-8">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Unit Price (tk)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Unit price">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Brand</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Brand">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Model</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Model">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Part No.</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Part No">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Origin</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Country of Manufacture</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select Country</option>
+                                  <option value="">Bangladesh</option>
+                                  <option value="">India</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Manufacturer Name</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Manufacturer Name">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Production year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Wallanty year</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                  <option value="">2022</option>
+                                  <option value="">2023</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Source of Supply</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Port of Shipment</label>
+                              <div class="input-group">
+                                <select name="" id="">
+                                  <option value="">Select one</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Delivery Time (Days)</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3">
+                            <div class="form-element">
+                              <label>Offer Validity</label>
+                              <div class="input-group">
+                                <input type="text" placeholder="Delivery Time">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Other features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Other features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-element">
+                              <label>Technical features <sup class="text-danger">*</sup></label>
+                              <div class="input-group">
+                                <textarea rows="4" placeholder="Technical features"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="custom_file_browse">
+                          <div class="row gy-2">
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Brochure/Catalogue <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Spec Compliance State <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>OEM Certificate <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Letter of Authorization <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <div class="form-element">
+                                <label>Technical Document <sup class="text-danger">*</sup></label>
+                                <div class="input-group">
+                                  <div class="file_main">
+                                    <div class="pdf">
+                                      <img src="images/file.png" alt="file" class="img-fluid w-100">
+                                    </div>
+                                    <input id="file" class="d-none" type="file" placeholder="File">
+                                    <label for="file"><i class="fas fa-upload me-1"></i> Choose file</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button_groups_">
+              <div class="row gy-2">
+                <div class="col-lg-12">
+                  <div class="form-element">
+                    <button type="submit" class="submit_btn">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <!-- content part end -->
+    </div>
+    <!-- main content end -->
+  </section>
+
+  <!-- sidebar navigation end -->
+  <style>
+    .fieldset_ {
+      width: 100%;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 24px;
+      border-radius: 10px;
+      position: relative;
+      padding-top: 34px;
+    }
+
+    .fieldset_ .legend_ {
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+      border: 1px solid #222;
+      background-color: #ECF3FF;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      position: absolute;
+      top: -17px;
+      left: 24px;
+      border-radius: 50px;
+    }
+
+    .gatepass_invoice {
+      border: 1px solid #ddd;
+      padding: 30px 20px;
+      background: #fff;
+      border-radius: 10px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .gatepass_invoice .sl_no_table td.info {
+      border: 0 !important;
+      position: unset !important;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .gatepass_invoice .top_info {
+      text-align: center;
+      color: #222;
+    }
+
+    .gatepass_invoice .info {
+      margin-top: 10px;
+    }
+
+    .gatepass_invoice .info ul {
+      list-style: none;
+    }
+
+    .gatepass_invoice .info ul li {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .gatepass_invoice .main_top_info {
+      margin-top: 10px;
+    }
+
+    .gatepass_invoice .main_top_info table {
+      width: 100%;
+      color: #222;
+    }
+
+    .gatepass_invoice .main_top_info table td {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      text-align: left;
+    }
+
+    .gatepass_invoice .main_top_info table td.title {
+      width: 85px;
+      position: relative;
+      top: 4px;
+    }
+
+    .gatepass_invoice .main_top_info table td.info {
+      border-bottom: 1px dashed;
+      padding-bottom: 0;
+    }
+
+    .gatepass_invoice .main_top_info table td.right_td {
+      padding-left: 30px;
+    }
+
+    .gatepass_invoice .main_top_info table td.refer {
+      width: 120px;
+    }
+
+    .gatepass_invoice .main_info_body {
+      margin-top: 25px;
+    }
+
+    .gatepass_invoice .main_info_body table {
+      width: 100%;
+      color: #222;
+    }
+
+    .gatepass_invoice .info .gatepass_btn {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 8px;
+      border: 1px solid #222;
+      background-color: transparent;
+      padding: 3px 20px;
+      border-radius: 50px;
+      letter-spacing: 2px;
+      cursor: unset;
+    }
+
+    .gatepass_invoice .main_info_body th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      border: 1px solid #575757;
+      padding: 8px;
+    }
+
+    .gatepass_invoice .main_info_body td {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      border: 1px solid #575757;
+      padding: 8px;
+    }
+
+    .gatepass_invoice .main_info_body th {
+      background-color: #f2f2f2;
+    }
+
+    .gatepass_invoice .main_info_body td h6 {
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    .gatepass_invoice .signature_table {
+      margin-top: 44px;
+    }
+
+    .gatepass_invoice .signature_table table {
+      width: 100%;
+      color: #222;
+    }
+
+    .gatepass_invoice .signature_table .top_table table td {
+      width: 25%;
+    }
+
+    .gatepass_invoice .signature_table table td span {
+      width: 25%;
+      border-top: 1px solid #222;
+      position: relative;
+    }
+
+    .gatepass_invoice .signature_table table td span img {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+    }
+
+    .gatepass_invoice .signature_table .btm_table {
+      margin-top: 35px;
+    }
+
+    .gatepass_invoice .signature_table .btm_table table td {
+      width: 33%;
+    }
+
+    .editable_invoice input {
+      border: 0;
+      width: 100%;
+    }
+
+    .editable_invoice textarea {
+      border: 0;
+      resize: none;
+      width: 100%;
+    }
+  </style>
+
+  <!-- script file start -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/smooth-scrollbar.js"></script>
+  <script src="js/script.js"></script>
+  <!-- script file  end-->
+</body>
+
+</html>

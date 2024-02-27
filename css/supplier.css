@@ -1,0 +1,456 @@
+.login_area {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-size: cover !important;
+  align-self: center;
+  position: relative;
+  background-position: center center !important;
+  padding: 100px 0;
+  margin-bottom: -80px;
+  min-height: 100vh;
+}
+
+.login_area .login_main {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  position: relative;
+  z-index: 9;
+  border-radius: 10px;
+  padding: 30px 24px !important;
+  box-shadow: 0px 6px 34px rgba(215, 216, 222, 0.41);
+}
+
+.login_area .login_main .title .login_title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f2931;
+}
+
+.login_area .login_main .form_main {
+  margin-top: 30px;
+}
+
+.login_area .login_main .forgot_password {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.login_area .login_main .forgot_password .remember a {
+  color: #00c291;
+  text-decoration: underline;
+}
+
+.login_area .login_main .forgot_password .forgot a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #0f2931;
+  cursor: pointer;
+}
+
+.login_area .login_main .sign_up_now {
+  margin-top: 34px;
+}
+
+.login_area .login_main .sign_up_now .title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.login_area .login_main .sign_up_now .sign_up_btn {
+  width: 100%;
+  height: 48px;
+  line-height: 42px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f2931;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: 1px solid #0f2931;
+}
+
+.login_area .login_main .sign_up_now .sign_up_btn:hover {
+  background-color: #0f2931;
+  color: #ffffff;
+}
+
+.login_area .input_groups {
+  margin-bottom: 14px;
+}
+
+.login_area .input_groups label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.login_area .input_groups input {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0 16px;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.login_area .input_groups input:focus {
+  border-color: #0f2931;
+}
+
+.login_area .input_groups small {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.login_area .button_groups button {
+  width: 100%;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #0f2931;
+  border: 0;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.login_area .button_groups button:hover {
+  background-color: #0f2931;
+}
+
+/* tender quotation apply  */
+.tender_quotation_apply .top_info_ {
+  border: 1px solid #ddd;
+  /* background-color: #fff; */
+  background-color: rgba(217, 228, 248, 0.4);
+
+}
+
+.tender_quotation_apply .top_info_ .left_info {
+  padding: 20px;
+  /* clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0% 100%); */
+border-right: 2px solid rgba(15, 41, 49, 0.2);
+}
+
+.tender_quotation_apply .top_info_ .left_info h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f2931;
+}
+
+.tender_quotation_apply .top_info_ .right_info {
+  /* background-color: #D9E4F8; */
+  height: 100%;
+  padding: 18px;
+  padding-left: 130px;
+  /* clip-path: polygon(12% 0%, 100% 0, 100% 100%, 0% 100%); */
+}
+
+.tender_quotation_apply .top_info_ .right_info .top {
+  border-bottom: 1px solid #0f2931;
+  padding-bottom: 10px;
+}
+
+.tender_quotation_apply .top_info_ .right_info .left_title h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f2931;
+}
+
+.tender_quotation_apply .top_info_ .right_info .right_title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f2931;
+}
+
+.tender_quotation_grand_total h3 {
+  color: #0f2931;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tender_quotation_grand_total h3 span {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.tender_apply_accordion_area .accordion_items {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.tender_apply_accordion_area .accordion_items .top_title {
+  cursor: pointer;
+}
+
+.tender_apply_accordion_area .accordion_items .top_title ul li {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f2931;
+}
+
+.tender_apply_accordion_area .accordion_items .top_title ul li.number {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #00c291;
+  text-align: center;
+  line-height: 30px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 17px;
+  margin-right: 5px;
+}
+
+.tender_apply_accordion_area .accordion_items .main_info {
+  padding-top: 20px;
+  display: none;
+}
+
+.tender_apply_accordion_area .accordion_items:nth-child(1) .main_info {
+  display: block;
+}
+
+.tender_quotation_apply .main_tender_apply_form {
+  border-top: 1px solid #ddd;
+  padding: 16px;
+}
+
+.tender_quotation_apply .main_tender_apply_form select {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid rgba(60, 60, 60, 0.26) !important;
+  border-radius: 3px;
+}
+
+.tender_quotation_apply .main_tender_apply_form textarea {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid rgba(60, 60, 60, 0.26) !important;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.tender_quotation_apply .custom_file_browse .file_main {
+  width: 100%;
+  border: 1px dashed #ccc;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+.tender_quotation_apply .custom_file_browse .file_main .pdf {
+  width: 70px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tender_quotation_apply .custom_file_browse .file_main label {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 25px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.tender_quotation_apply .button_groups_ button {
+  background-color: #00BCD4;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 8px 38px;
+  border-radius: 3px;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+select {
+  background-color: transparent;
+  width: 100%;
+  border: 1px solid rgba(60, 60, 60, 0.26) !important;
+  border-radius: 3px;
+}
+
+.all_tender_search_ {
+  margin-bottom: 10px;
+}
+
+.tender_search_result_table table th {
+  padding: 10px !important;
+}
+
+.tender_search_result_table table th i {
+  font-size: 10px;
+  margin: 5px
+}
+
+.supplier_dashboard_top_info .summery-item .counter {
+  font-size: 40px;
+  padding-bottom: 0;
+}
+
+.supplier_dashboard_top_info .summery-item.item-2 {
+  background-image: linear-gradient(90deg, #5f82d3, #1e499f) !important;
+}
+
+.change_password_supplier .button_groups_ button {
+  background-color: #00BCD4;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 9px 20px;
+  border-radius: 3px;
+  letter-spacing: 2px;
+}
+
+.navigation-body {
+  background-color: #2f3a4e;
+  bottom: 12px;
+  overflow: unset;
+  position: fixed;
+  top: 82px;
+  left: 12px;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.navigation-body .logo::before {
+  display: none;
+}
+
+.supplier_profile_images_ {
+  margin-bottom: 30px;
+}
+
+.supplier_profile_images_ .image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.supplier_profile_images_ .text h4 {
+  font-size: 16px;
+  color: #0f2931;
+  margin-bottom: 5px;
+}
+
+.supplier_profile_images_ .text p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00BCD4;
+  margin-bottom: 4px;
+}
+
+.top-header {
+  position: fixed;
+  width: calc(100% - 24px);
+}
+
+.top-header.fixed {
+  width: calc(100% - 24px);
+}
+
+.main-content-body {
+  min-height: calc(100vh - 24px) !important;
+  padding-top: 70px;
+}
+
+.supplier_footer_ {
+  width: 100%;
+  background-color: #fff;
+  z-index: -1;
+  padding: 15px 0;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.supplier_footer_ p {
+  color: #0f2931;
+}
+
+.supplier_footer_ p a {
+  color: #00BCD4;
+}
+
+.table-list-body {
+  height: unset !important;
+  max-height: 573px;
+}
+
+.quotation_history_view_ .company_name {
+  margin-bottom: 20px;
+}
+
+.quotation_history_view_ .company_name h2 {
+  color: #0f2931;
+  font-size: 26px;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+}
+
+.quotation_history_view_ .top_info_ ul {
+  border: 1px solid #ddd;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding: 12px;
+}
+
+.quotation_history_view_ .top_info_ ul li {
+  color: #0f2931;
+  font-weight: 500;
+}
+
+.quotation_history_view_ .top_info_ ul li.to {
+  font-size: 18px;
+}
+
+.quotation_submission_view_table_ .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f2931;
+  background-color: rgba(0, 188, 212, 0.2);
+  padding: 6px 12px;
+}
+
+.quotation_submission_view_table_ table .specification {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f2931;
+  background-color: rgba(0, 194, 145, 0.2);
+  padding: 6px 12px;
+}
+.quotation_submission_view_table_btm{
+  border: 1px solid #ddd;
+  padding:12px;
+}

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADMIN PANEL</title>
+  <!-- google font start -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- google font end -->
+  <script src="https://kit.fontawesome.com/3f4c7459cb.js" crossorigin="anonymous"></script>
+  <!-- css file start -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/smooth-scrollbar.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/google-metarial.css" />
+  <link rel="stylesheet" href="css/supplier.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- css file end -->
+</head>
+
+<body class="sidebar">
+  <!-- sidebar navigation start -->
+  <section class="dashboard">
+    <div class="toggle-overlay d-block d-lg-none"></div>
+    <!-- top header start -->
+    <div data-v-251ab46d="" data-v-f0f01d2e="" class="top-header" style="background-color: rgb(97, 218, 255)">
+      <div data-v-251ab46d="" class="topbar">
+        <div data-v-251ab46d="" class="row">
+          <div class="col-2 col-sm-1 col-md-1 col-lg-3 left-info-col align-self-center" data-v-251ab46d="">
+            <div class="left-info d-flex" data-v-251ab46d="">
+              <div class="mobile-control-bar d-block d-lg-none" data-v-251ab46d="">
+                <i class="fas fa-bars" aria-hidden="true" data-v-251ab46d=""></i>
+              </div>
+              <div class="control-bar d-none" data-v-251ab46d="">
+                <i class="fas fa-bars" aria-hidden="true" data-v-251ab46d=""></i>
+              </div>
+              <div class="expand" data-v-251ab46d="">
+                <i class="fas fa-arrows-alt" aria-hidden="true" data-v-251ab46d=""></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-8 d-none d-lg-flex col-sm-7 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"
+            data-v-251ab46d="">
+            <!-- &lt;p class=&quot;text-white bold text-center&quot;&gt;{{ loggedInfo() }}&lt;/p&gt; -->
+            <!-- <p class="text-white bold text-center" data-v-251ab46d="">
+                      <span id="currentTime" data-v-251ab46d="">3:00:50 PM</span> -
+                      <span id="currentDate" data-v-251ab46d=""
+                        >Monday, February 26, 2024</span
+                      >
+                    </p> -->
+            <img data-v-22a4e926="" class="main-logo" src="https://i.ibb.co/dt6wXr5/Group-1707478059.png"
+              alt="Group-1707478059" border="0" />
+            <!-- &lt;p class=&quot;text-white bold text-center&quot;&gt;You Logged in as&lt;/p&gt; -->
+          </div>
+          <div data-v-251ab46d="" class="col-2 ms-auto col-sm-4 col-md-3 col-lg-3 right-info-col">
+            <div data-v-251ab46d=""
+              class="right-info header-right-info text-end d-flex justify-content-end align-items-center">
+              <div data-v-251ab46d="" class="profile dropdown">
+                <ul data-v-251ab46d="" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <li data-v-251ab46d="" class="me-4">Logged in as</li>
+                  <li data-v-251ab46d="" class="profile-image">
+                    <img data-v-251ab46d="" src="http://localhost/naasa-scmd/public/images/profile.jpg" alt="profile" />
+                  </li>
+                  <li data-v-251ab46d="">
+                    <span data-v-251ab46d="" class="d-none d-sm-inline-block">Nogor Solutions</span><i
+                      data-v-251ab46d="" class="px-1 fas fa-angle-down" aria-hidden="true"></i>
+                  </li>
+                </ul>
+                <ul data-v-251ab46d="" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li data-v-251ab46d="">
+                    <a data-v-251ab46d="" href="http://localhost/naasa-scmd/admin/siteSetting/1/edit"><i
+                        data-v-251ab46d="" class="fa fa-cog text-aqua" aria-hidden="true"></i>Settings</a>
+                  </li>
+                  <li data-v-251ab46d="">
+                    <a data-v-251ab46d="" href="http://localhost/naasa-scmd/admin/admin/1"><i data-v-251ab46d=""
+                        class="fa fa-user-o" aria-hidden="true"></i>Profile</a>
+                  </li>
+                  <li data-v-251ab46d="">
+                    <a data-v-251ab46d="" href="javascript:void(0)"><i data-v-251ab46d="" class="fas fa-sign-out-alt"
+                        aria-hidden="true"></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- navbar part start -->
+    </div>
+    <!-- top header end -->
+    <div data-v-22a4e926="" class="navigation-body shadow" style="background-color: rgb(47, 58, 78)">
+      <div data-v-22a4e926="" class="close-mobile-menu d-block d-lg-none">
+        <i data-v-22a4e926="" class="bi bi-arrow-left"></i>
+      </div>
+      <div class="supplier_profile_images_">
+        <div class="image">
+          <img src="https://i.ibb.co/fFyNJn9/prf.png" alt="prf" border="0" class="img-fluid w-100">
+        </div>
+        <div class="text text-center">
+          <h4>Nogor solutions limited</h4>
+          <p>NSL - 123</p>
+        </div>
+      </div>
+      <div class="navigation" id="my-scrollbar">
+        <div data-v-22a4e926="" class="main-menus">
+          <ul data-v-22a4e926="" id="accordion" class="accordion">
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="index.html" class="router-link-active active" data-route="dashboard.index"
+                data-lol="dashboard.index" aria-current="page"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fas fa-cog spin" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Dashboard</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="profile.html" class="" data-route="deliveryOrders.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Profiles</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="tender-notice.html" class="" data-route="gatePass.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Tender Notice</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="tender-quotation-apply.html" class="" data-route="requisitions.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Tender Quotation Apply</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="tender-opening-board.html" class="" data-route="tenders.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Tender Opening Board</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="quotation-histories.html" class="" data-route="admin.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Quotation Histories</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="invoices.html" class="" data-route="admin.index"
+                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Invoices</span></span></a>
+            </li>
+            <li data-v-22a4e926="">
+              <a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
+                data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Change Password</span></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div data-v-22a4e926="" class="collapsed-navigation d-none">
+        <ul data-v-22a4e926="">
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fas fa-cog spin"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title">
+                  <a data-v-22a4e926="" href="/naasa-scmd/admin/dashboard"
+                    class="router-link-active active mini-dashboard" aria-current="page">Dashboard</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-circle-o text-aqua"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title">
+                  <a data-v-22a4e926="" href="/naasa-scmd/admin/deliveryOrders"
+                    class="mini-dashboard">DeliveryOrders</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-circle-o text-aqua"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title">
+                  <a data-v-22a4e926="" href="/naasa-scmd/admin/gatePass" class="mini-dashboard">GatePass</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-circle-o text-aqua"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title">
+                  <a data-v-22a4e926="" href="/naasa-scmd/admin/requisitions" class="mini-dashboard">Requisitions</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-circle-o text-aqua"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title">
+                  <a data-v-22a4e926="" href="/naasa-scmd/admin/tenders" class="mini-dashboard">Tenders</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-user" aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li data-v-22a4e926="" class="menu-title">
+                  <a data-v-22a4e926="" href="/naasa-scmd/admin/admin" class="mini-dashboard">Admin</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fab fa-mastodon"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title">
+                  <a href="#" class="mini-dashboard">Master Setup</a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/category" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Category</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-windows"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title">
+                  <a href="#" class="mini-dashboard">Contents</a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/content" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Content List</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fas fa-globe"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title">
+                  <a href="#" class="mini-dashboard">Website</a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/contacts" class=""><em><i class="fas fa-address-book"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Contact Us</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/events" class=""><em><i class="fas fa-snowflake"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Event</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/faq" class=""><em><i class="fas fa-book-open" aria-hidden="true"></i></em>
+                    &nbsp; <span>Faq</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/notice" class=""><em><i class="fab fa-leanpub" aria-hidden="true"></i></em>
+                    &nbsp; <span>Notice</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/news" class=""><em><i class="fa fa-newspaper-o"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>News</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!--v-if-->
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-windows"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title">
+                  <a href="#" class="mini-dashboard">Gallery / Images</a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/album" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Albums</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/photo" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Photos</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/video" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Videos</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/slider" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Sliders</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li data-v-22a4e926="">
+            <a data-v-22a4e926="" href="#"><em data-v-22a4e926=""><i class="fa fa-windows"
+                  aria-hidden="true"></i></em></a>
+            <div data-v-22a4e926="" class="mini-dropdown-menu">
+              <ul data-v-22a4e926="">
+                <li class="menu-title">
+                  <a href="#" class="mini-dashboard">System Settings</a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/role" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>User Role</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/menu" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Backend Menu List</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/frontMenu" class=""><em><i class="fa fa-list text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Frontend Menu List</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/siteSetting" class=""><em><i class="fa fa-cog text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Site Settings</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/activityLog" class=""><em><i class="fa fa-history"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Activity Log</span></a>
+                </li>
+                <li>
+                  <a href="/naasa-scmd/admin/module/create" class=""><em><i class="fa fa-folder text-aqua"
+                        aria-hidden="true"></i></em>
+                    &nbsp; <span>Module Create</span></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- collapsed navigation end-->
+      <!-- <div data-v-22a4e926="" class="branding text-center" style="">
+        <h6 data-v-22a4e926="" class="full-brand">
+          Developed By
+          <a data-v-22a4e926="" href="https://www.nogorsolutions.com/" target="_blank" class="d-block">Nogor Solutions
+            Limited</a>
+        </h6>
+        <div data-v-22a4e926="" class="short-brand d-none">
+          <img data-v-22a4e926="" src="http://localhost/naasa-scmd/public/images/nogor-favicon.png"
+            alt="nogo-fevicon" />
+        </div>
+      </div> -->
+    </div>
+    <!-- main content start -->
+    <div class="main-content-body">
+      <!-- breadcrumb start -->
+      <div data-v-584f0aa9="" data-v-f0f01d2e="" class="bread-crumb-part" style="">
+        <div data-v-584f0aa9="" class="row">
+          <div data-v-584f0aa9="" class="col-md-6 col-lg-6">
+            <div data-v-584f0aa9="" class="right-info text-start">
+              <ul data-v-584f0aa9="">
+                <li data-v-584f0aa9="">
+                  <a data-v-584f0aa9="" href="/naasa-scmd/admin/dashboard" class="router-link-active active"
+                    aria-current="page">Quotation History View</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div data-v-584f0aa9="" class="col-md-6 col-lg-6">
+
+          </div>
+        </div>
+      </div>
+      <!-- breadcrumb end -->
+      <!-- content part start -->
+      <div class="content-part">
+        <div class="fieldset_ mt-4">
+          <span class="legend_">Quotation History View</span>
+
+          <div class="quotation_history_view_">
+            <div class="text-end">
+              <button class="btn btn-sm shadow-none btn-success mb-2"><i class="fa fa-print"></i> Print</button>
+            </div>
+            <div class="top_info_">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="company_name text-center">
+                    <h2>Nogor Solutions Limited</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled">
+                    <li>20 Dec, 2024</li>
+                    <li class="my-1 to"><b>To</b></li>
+                    <li>The Marketing Officer</li>
+                    <li>Dhaka Store Dept.</li>
+                    <li class="mt-3">Subject: Quotation for Tender No: 1124.L/FP-54</li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled text-end">
+                    <li>Tender No: 1124.L/FP-54</li>
+                    <li>Tender Opening Date: 21 Dec, 2024</li>
+                    <li>Quotation No: 1124.L/FP-54</li>
+                    <li>Quotation Submission Date: 20 Dec, 2024</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="quotation_submission_view_table_ mt-3">
+              <h3 class="title">Quotations / Offer Submitted</h3>
+              <table class="table table-bordered mb-0 mt-2">
+                <thead>
+                  <tr>
+                    <th>Ser</th>
+                    <th>Name of Item</th>
+                    <th>Deno</th>
+                    <th>Qty</th>
+                    <th>Unit Price</th>
+                    <th>Total Price</th>
+                  </tr>
+                </thead>
+                <tbody style="border-top: 0;">
+                  <tr>
+                    <td>1</td>
+                    <td>Software, Catalogue Database Correction</td>
+                    <td>No</td>
+                    <td>1</td>
+                    <td>11,99,788.00</td>
+                    <td>11,99,788.00</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="11"></td>
+                    <td colspan="5">
+                      <h3 class="specification">Specifications:</h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Brand</td>
+                    <td>N/A</td>
+                    <td colspan="2">Model</td>
+                    <td>N/A</td>
+                  </tr>
+                  <tr>
+                    <td>Country of Origin</td>
+                    <td>Bangladesh</td>
+                    <td colspan="2">Manufacturer Country</td>
+                    <td>Bangladesh</td>
+                  </tr>
+                  <tr>
+                    <td>Manufacturer Name</td>
+                    <td>Nogor Solutions Limited</td>
+                    <td colspan="2">Production Year</td>
+                    <td>2023</td>
+                  </tr>
+                  <tr>
+                    <td>Source of Supply</td>
+                    <td>Local</td>
+                    <td colspan="2">Supply Source Address</td>
+                    <td>Hourse 69(2nd Floor), Road-8, Block-D Niketon, Gulshan-1, Dhaka-1212</td>
+                  </tr>
+                  <tr>
+                    <td>Port Of Shipment</td>
+                    <td>Bangladesh</td>
+                    <td colspan="2">Warranty in Years</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>Delivery in Days</td>
+                    <td>90</td>
+                    <td colspan="2">Offer Validity</td>
+                    <td>20-06-2024</td>
+                  </tr>
+
+                  <tr>
+                    <td>Part No</td>
+                    <td>N / A</td>
+                    <td colspan="2">Attachment</td>
+                    <td><a href="#"><span class="badge bg-info">Attachment</span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Duty</td>
+                    <td>Without Duty</td>
+                    <td colspan="2">Spec Compliance</td>
+                    <td><span class="badge bg-info">Spec Compliance</span></a></td>
+                  </tr>
+                  <tr>
+                    <td>Maintenancer Offer</td>
+                    <td><span class="badge bg-info">Maintenancer Offer</span></a></td>
+                    <td colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+                      <h5 class="text-center">*Warranty certificate will be submitted along with item.</h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table mb-0 mt-2 table-bordered bg-light">
+                <tr>
+                  <th>Grand Total (in TK)</th>
+                  <th>Eleven Lakhs Ninety Seven Thousand Five Hundred only</th>
+                  <th>11,87,500.00</th>
+                </tr>
+              </table>
+              <div class="quotation_submission_view_table_btm mt-3">
+                <img src="images/stamp.png" alt="stamp" width="80" class="rounded-circle">
+                <h5 class="my-2">Nogor Solutions Limited</h5>
+                <p>https://www.nogorsolutions.com</p>
+                <p>Mobile:0171788789</p>
+                <p>
+                  Email: info@nogorsolutions.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content part end -->
+    </div>
+    <!-- main content end -->
+    <!-- footer area start -->
+    <div class="supplier_footer_ text-center">
+      <div class="container">
+        <p>Development by <a href="#">Nogor Solutions Limited</a></p>
+      </div>
+    </div>
+    <!-- footer area end -->
+  </section>
+
+  <!-- sidebar navigation end -->
+  <style>
+    .fieldset_ {
+      width: 100%;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      padding: 24px;
+      border-radius: 10px;
+      position: relative;
+      padding-top: 34px;
+    }
+
+    .fieldset_ .legend_ {
+      font-size: 16px;
+      font-weight: 600;
+      color: #222;
+      border: 1px solid #222;
+      background-color: #ecf3ff;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      position: absolute;
+      top: -17px;
+      left: 24px;
+      border-radius: 50px;
+    }
+
+    .gatepass_invoice {
+      border: 1px solid #ddd;
+      padding: 30px 20px;
+      background: #fff;
+      border-radius: 10px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .gatepass_invoice .sl_no_table td.info {
+      border: 0 !important;
+      position: unset !important;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    .gatepass_invoice .top_info {
+      text-align: center;
+      color: #222;
+    }
+
+    .gatepass_invoice .info {
+      margin-top: 10px;
+    }
+
+    .gatepass_invoice .info ul {
+      list-style: none;
+    }
+
+    .gatepass_invoice .info ul li {
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .gatepass_invoice .main_top_info {
+      margin-top: 10px;
+    }
+
+    .gatepass_invoice .main_top_info table {
+      width: 100%;
+      color: #222;
+    }
+
+    .gatepass_invoice .main_top_info table td {
+      padding-top: 3px;
+      padding-bottom: 3px;
+      text-align: left;
+    }
+
+    .gatepass_invoice .main_top_info table td.title {
+      width: 85px;
+      position: relative;
+      top: 4px;
+    }
+
+    .gatepass_invoice .main_top_info table td.info {
+      border-bottom: 1px dashed;
+      padding-bottom: 0;
+    }
+
+    .gatepass_invoice .main_top_info table td.right_td {
+      padding-left: 30px;
+    }
+
+    .gatepass_invoice .main_top_info table td.refer {
+      width: 120px;
+    }
+
+    .gatepass_invoice .main_info_body {
+      margin-top: 25px;
+    }
+
+    .gatepass_invoice .main_info_body table {
+      width: 100%;
+      color: #222;
+    }
+
+    .gatepass_invoice .info .gatepass_btn {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 8px;
+      border: 1px solid #222;
+      background-color: transparent;
+      padding: 3px 20px;
+      border-radius: 50px;
+      letter-spacing: 2px;
+      cursor: unset;
+    }
+
+    .gatepass_invoice .main_info_body th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      border: 1px solid #575757;
+      padding: 8px;
+    }
+
+    .gatepass_invoice .main_info_body td {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      border: 1px solid #575757;
+      padding: 8px;
+    }
+
+    .gatepass_invoice .main_info_body th {
+      background-color: #f2f2f2;
+    }
+
+    .gatepass_invoice .main_info_body td h6 {
+      text-decoration: underline;
+      font-size: 15px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+
+    .gatepass_invoice .signature_table {
+      margin-top: 44px;
+    }
+
+    .gatepass_invoice .signature_table table {
+      width: 100%;
+      color: #222;
+    }
+
+    .gatepass_invoice .signature_table .top_table table td {
+      width: 25%;
+    }
+
+    .gatepass_invoice .signature_table table td span {
+      width: 25%;
+      border-top: 1px solid #222;
+      position: relative;
+    }
+
+    .gatepass_invoice .signature_table table td span img {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+    }
+
+    .gatepass_invoice .signature_table .btm_table {
+      margin-top: 35px;
+    }
+
+    .gatepass_invoice .signature_table .btm_table table td {
+      width: 33%;
+    }
+
+    .editable_invoice input {
+      border: 0;
+      width: 100%;
+    }
+
+    .editable_invoice textarea {
+      border: 0;
+      resize: none;
+      width: 100%;
+    }
+  </style>
+
+  <!-- script file start -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/smooth-scrollbar.js"></script>
+  <script src="js/script.js"></script>
+  <!-- script file  end-->
+</body>
+
+</html>
