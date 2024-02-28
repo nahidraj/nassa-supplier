@@ -1,27 +1,25 @@
 $(function () {
-  $(document).ready(function() {
+  $(document).ready(function () {
     // Hide all main_info initially
-    $('.accordion_items .main_info').hide();
-  
+    $(".accordion_items .main_info").hide();
+
     // Show main_info for the first accordion item
-    $('.accordion_items:nth-child(1) .main_info').show();
-  
+    $(".accordion_items:nth-child(1) .main_info").show();
+
     // Add click event to toggle visibility without animation
     $(".collapse_arrow").click(function () {
       // Find the closest .accordion_items and toggle its .main_info
       var mainInfo = $(this).closest(".accordion_items").find(".main_info");
       mainInfo.toggle();
-  
+
       // Toggle icon class for the button
       var icon = $(this).find("i");
       icon.toggleClass("fa-angle-down fa-angle-up");
-  
+
       // Hide other main_info elements without animation
-      $('.accordion_items .main_info').not(mainInfo).hide();
+      $(".accordion_items .main_info").not(mainInfo).hide();
     });
   });
-  
-  
 
   // fixed header part js
   $(window).scroll(function () {
@@ -101,19 +99,19 @@ $(function () {
   });
 
   // Request full screen js
-  const arrows = document.querySelector(".fa-arrows-alt");
-  const body = document.querySelector("body");
+  // const arrows = document.querySelector(".fa-arrows-alt");
+  // const body = document.querySelector("body");
 
-  const toggleFullscreen = () => {
-    if (document.fullscreenElement) document.exitFullscreen();
-    else body.requestFullscreen();
-  };
+  // const toggleFullscreen = () => {
+  //   if (document.fullscreenElement) document.exitFullscreen();
+  //   else body.requestFullscreen();
+  // };
 
-  arrows.addEventListener("click", toggleFullscreen);
-  const onChange = () => {
-    body.className = document.fullscreenElement ? "fullscreen" : "";
-  };
-  document.addEventListener("fullscreenchange", onChange);
+  // arrows.addEventListener("click", toggleFullscreen);
+  // const onChange = () => {
+  //   body.className = document.fullscreenElement ? "fullscreen" : "";
+  // };
+  // document.addEventListener("fullscreenchange", onChange);
 
   // couter up js
   $(".counter").counterUp({

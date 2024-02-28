@@ -142,7 +142,7 @@
                   class="title"><span data-v-22a4e926="">Tender Opening Board</span></span></a>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="quotation-histories.html" class="router-link-active active" data-route="admin.index"
+              <a data-v-22a4e926="" href="quotation-histories.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
                   class="title"><span data-v-22a4e926="">Quotation Histories</span></span></a>
@@ -154,7 +154,7 @@
                   class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="invoices.html" class="" data-route="admin.index"
+              <a data-v-22a4e926="" href="invoices.html" class="router-link-active active" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
                   class="title"><span data-v-22a4e926="">Invoices</span></span></a>
@@ -401,7 +401,7 @@
               <ul data-v-584f0aa9="">
                 <li data-v-584f0aa9="">
                   <a data-v-584f0aa9="" href="/naasa-scmd/admin/dashboard" class="router-link-active active"
-                    aria-current="page">Quotation Histories</a>
+                    aria-current="page">Invoice</a>
                 </li>
               </ul>
             </div>
@@ -415,7 +415,7 @@
       <!-- content part start -->
       <div class="content-part">
         <div class="fieldset_ mt-4">
-          <span class="legend_">Quotation Histories</span>
+          <span class="legend_">Invoice</span>
           <div class="all_tender_search_">
             <form action="#">
               <div class="row">
@@ -423,7 +423,7 @@
                   <div class="row g-3">
                     <div class="col-lg-3">
                       <div class="form-element">
-                        <label>Submission Date From</label>
+                        <label>PO Date From</label>
                         <div class="input-group">
                           <input type="date" />
                         </div>
@@ -431,7 +431,7 @@
                     </div>
                     <div class="col-lg-3">
                       <div class="form-element">
-                        <label>Submission Date To</label>
+                        <label>PO Date To</label>
                         <div class="input-group">
                           <input type="date" />
                         </div>
@@ -523,49 +523,52 @@
                   <tr>
                     <th>#</th>
                     <th>
-                      <span class="table-title">Tender No
+                      <span class="table-title">Application Date
                         <!-- <i class="bi bi-caret-up-fill sort-up"></i>
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
                     <th>
-                      <span class="table-title">Tender Title
+                      <span class="table-title">Bill Details
                         <!-- <i class="bi bi-caret-up-fill sort-up"></i>
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
                     <th>
-                      <span class="table-title">Tender Type
+                      <span class="table-title">Approved By OIC
                       </span>
                     </th>
                     <th>
                       <span class="table-title">
-                        Quotation No
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">
-                        Submission Date
+                        Approved By CO
                         <!-- <i class="bi bi-caret-up-fill sort-up"></i>
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
                     <th>
                       <span class="table-title">
-                        Opening Date
+                        Approved Date
                         <!-- <i class="bi bi-caret-up-fill sort-up"></i>
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
-                    <th>PO Awarded To </th>
-                    <th>Status</th>
+                    <th>
+                      <span class="table-title">
+                        Status
+                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+                        <i class="bi bi-caret-down-fill sort-down"></i> -->
+                      </span>
+                    </th>
                     <th>Action</th>
                   </tr>
                 </thead>
                 <tbody style="border-top: 0">
                   <tr>
+                    <td colspan="8">
+                      <h6 class="text-center bg-light p-4">No Data Available.</h6>
+                    </td>
+                  </tr>
+                  <!-- <tr>
                     <td style="min-width:30px">1</td>
                     <td style="min-width:150px">122..LP/FP-52</td>
                     <td style="min-width:100px">Software, Catalogue Database Correction</td>
@@ -574,11 +577,6 @@
                     </td>
                     <td style="min-width:100px">Nog.12555.LP/Fp-551.00</td>
                     <td style="min-width:100px">20 Dec 2023</td>
-                    <td style="min-width:160px">21 Dec 2024</td>
-   
-                    <td style="min-width:100px">
-                      
-                    </td>
                     <td style="min-width:100px">
                       <span class="released comming">
                         Accepted
@@ -589,72 +587,10 @@
                         <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
                           class="delete view"><i class="fa-solid fa-eye"></i></span>
                       </a>
-                      <!-- <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete edit"><i class="fas fa-pencil-alt"></i></span> -->
                       <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
                         class="delete delete-btn"><i class="far fa-trash-alt"></i></span>
                     </td>
-                  </tr>
-                  <tr>
-                    <td style="min-width:30px">2</td>
-                    <td style="min-width:150px">122..LP/FP-52</td>
-                    <td style="min-width:100px">Software, Catalogue Database Correction</td>
-                    <td style="min-width:150px">
-                      Individual
-                    </td>
-                    <td style="min-width:100px">Nog.12555.LP/Fp-551.00</td>
-                    <td style="min-width:100px">20 Dec 2023</td>
-                    <td style="min-width:160px">21 Dec 2024</td>
-   
-                    <td style="min-width:100px">
-                      
-                    </td>
-                    <td style="min-width:100px">
-                      <span class="released">
-                        payment time over
-                      </span>
-                    </td>
-                    <td style="min-width:140px">
-                      <a href="quotation-histories-view.html">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                          class="delete view"><i class="fa-solid fa-eye"></i></span>
-                      </a>
-                      <!-- <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete edit"><i class="fas fa-pencil-alt"></i></span> -->
-                      <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete delete-btn"><i class="far fa-trash-alt"></i></span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="min-width:30px">3</td>
-                    <td style="min-width:150px">122..LP/FP-52</td>
-                    <td style="min-width:100px">Software, Catalogue Database Correction</td>
-                    <td style="min-width:150px">
-                      Individual
-                    </td>
-                    <td style="min-width:100px">Nog.12555.LP/Fp-551.00</td>
-                    <td style="min-width:100px">20 Dec 2023</td>
-                    <td style="min-width:160px">21 Dec 2024</td>
-   
-                    <td style="min-width:100px">
-                      
-                    </td>
-                    <td style="min-width:100px">
-                      <span class="released comming">
-                        Accepted
-                      </span>
-                    </td>
-                    <td style="min-width:140px">
-                      <a href="quotation-histories-view.html">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                          class="delete view"><i class="fa-solid fa-eye"></i></span>
-                      </a>
-                      <!-- <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete edit"><i class="fas fa-pencil-alt"></i></span> -->
-                      <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete delete-btn"><i class="far fa-trash-alt"></i></span>
-                    </td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
             </div>

@@ -48,7 +48,7 @@ body {
 
 
 .main-menus .router-link-active.active {
-  background-color: #F2F4F7;
+  background-color: #D3E3FD;
   border-color: #EAECF0 !important;
   color: #475467 !important;
   font-weight: 500;
@@ -78,7 +78,7 @@ body {
 
 .navigation-body .navigation .main-menus ul li a:hover {
   color: #fff;
-  background: #F2F4F7;
+  background: #D3E3FD;
   border-radius: 5px;
 }
 

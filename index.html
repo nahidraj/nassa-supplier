@@ -34,7 +34,7 @@
         <div data-v-251ab46d="" class="row">
           <div class="col-2 col-sm-1 col-md-1 col-lg-3 left-info-col align-self-center" data-v-251ab46d="">
             <div class="left-info d-flex" data-v-251ab46d="">
-              <div class="mobile-control-bar d-block d-lg-none" data-v-251ab46d="">
+              <!-- <div class="mobile-control-bar d-block d-lg-none" data-v-251ab46d="">
                 <i class="fas fa-bars" aria-hidden="true" data-v-251ab46d=""></i>
               </div>
               <div class="control-bar d-none" data-v-251ab46d="">
@@ -42,22 +42,20 @@
               </div>
               <div class="expand" data-v-251ab46d="">
                 <i class="fas fa-arrows-alt" aria-hidden="true" data-v-251ab46d=""></i>
+              </div> -->
+              <div
+                class="col-8 d-none d-lg-flex col-sm-7 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"
+                data-v-251ab46d="">
+                <img data-v-22a4e926="" class="main-logo" src="images/logo1.png" alt="Group-1707478059" border="0" />
               </div>
             </div>
           </div>
           <div
             class="col-8 d-none d-lg-flex col-sm-7 col-md-8 col-lg-6 d-flex align-items-center justify-content-center"
             data-v-251ab46d="">
-            <!-- &lt;p class=&quot;text-white bold text-center&quot;&gt;{{ loggedInfo() }}&lt;/p&gt; -->
-            <!-- <p class="text-white bold text-center" data-v-251ab46d="">
-                      <span id="currentTime" data-v-251ab46d="">3:00:50 PM</span> -
-                      <span id="currentDate" data-v-251ab46d=""
-                        >Monday, February 26, 2024</span
-                      >
-                    </p> -->
-            <img data-v-22a4e926="" class="main-logo" src="https://i.ibb.co/dt6wXr5/Group-1707478059.png"
-              alt="Group-1707478059" border="0" />
-            <!-- &lt;p class=&quot;text-white bold text-center&quot;&gt;You Logged in as&lt;/p&gt; -->
+            <!-- <img data-v-22a4e926="" class="main-logo" src="https://i.ibb.co/dt6wXr5/Group-1707478059.png"
+              alt="Group-1707478059" border="0" /> -->
+            <h4 class="dash_supp_title">Supplier Panel</h4>
           </div>
           <div data-v-251ab46d="" class="col-2 ms-auto col-sm-4 col-md-3 col-lg-3 right-info-col">
             <div data-v-251ab46d=""
@@ -65,13 +63,13 @@
               <div data-v-251ab46d="" class="profile dropdown">
                 <ul data-v-251ab46d="" class="dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <li data-v-251ab46d="" class="me-4">Logged in as</li>
+                  <li data-v-251ab46d="" class="me-3">Logged in as</li>
                   <li data-v-251ab46d="" class="profile-image">
                     <img data-v-251ab46d="" src="http://localhost/naasa-scmd/public/images/profile.jpg" alt="profile" />
                   </li>
                   <li data-v-251ab46d="">
-                    <span data-v-251ab46d="" class="d-none d-sm-inline-block">Nogor Solutions</span><i
-                      data-v-251ab46d="" class="px-1 fas fa-angle-down" aria-hidden="true"></i>
+                    <span data-v-251ab46d="" class="d-none d-sm-inline-block">Nogor</span><i data-v-251ab46d=""
+                      class="px-1 fas fa-angle-down" aria-hidden="true"></i>
                   </li>
                 </ul>
                 <ul data-v-251ab46d="" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -416,13 +414,13 @@
       <!-- breadcrumb end -->
       <!-- content part start -->
       <div class="content-part">
-        <div class="supplier_dashboard_top_info">
+        <div class="supplier_dashboard_top_info pb-1">
           <div class="top-short-summery">
             <div class="row">
               <div class="col-lg-6 col-xl-3 col-xxl-4 col-md-6">
                 <div class="summery-item">
-                  <h4>Total Accepted Quotations</h4>
-                  <h4 class="mt-2">(2020-2021)</h4>
+                  <h4>Total Quotations</h4>
+                  <h6 class="mt-2">(2020-2021)</h6>
                   <h3 class="counter">2</h3>
                   <div class="circle">
                     <i class="far fa-id-card"></i>
@@ -431,21 +429,21 @@
               </div>
               <div class="col-lg-6 col-xl-3 col-xxl-4 col-md-6">
                 <div class="summery-item item-2">
-                  <h4>Total Quotations</h4>
-                  <h4 class="mt-2">(2020-2021)</h4>
+                  <h4>Total Purchase Order</h4>
+                  <h6 class="mt-2">(2020-2021)</h6>
                   <h3 class="counter">0</h3>
                   <div class="circle">
-                    <i class="far fa-id-card"></i>
+                    <i class="fas fa-tasks"></i>
                   </div>
                 </div>
               </div>
               <div class="col-lg-6 col-xl-3 col-xxl-4 col-md-6">
                 <div class="summery-item item-2">
-                  <h4>Total Purchanse Order</h4>
-                  <h4 class="mt-2">(2020-2021)</h4>
-                  <h3 class="counter">0</h3>
+                  <h4>Total Tender</h4>
+                  <h6 class="mt-2">(2020-2021)</h6>
+                  <h3 class="counter">20</h3>
                   <div class="circle">
-                    <i class="far fa-id-card"></i>
+                    <i class="fas fa-user-check"></i>
                   </div>
                 </div>
               </div>
@@ -526,8 +524,8 @@
             </form>
           </div>
           <div class="table-responsive tender_search_result_table">
-            <table id="pdf-table" class="table table-bordered table-striped">
-              <thead class="table-dark">
+            <table id="pdf-table" class="table table-striped" border="1">
+              <thead class="table-white">
                 <tr>
                   <th class="sl text-center" style="min-width: 40px">#</th>
                   <th style="min-width: 120px">
