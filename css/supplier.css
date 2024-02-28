@@ -361,7 +361,8 @@ select {
 
 .tender_search_result_table table th i {
   font-size: 10px;
-  margin: 5px
+  margin: 5px;
+  color: #0f2931 !important;
 }
 
 .supplier_dashboard_top_info .summery-item .counter {
