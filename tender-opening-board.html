@@ -112,10 +112,10 @@
         <div data-v-22a4e926="" class="main-menus">
           <ul data-v-22a4e926="" id="accordion" class="accordion">
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="index.html" class="" data-route="dashboard.index"
-                data-lol="dashboard.index" aria-current="page"><span data-v-22a4e926="" class="icon"><em
-                    data-v-22a4e926=""><i class="fas fa-cog spin" aria-hidden="true"></i></em></span><span
-                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Dashboard</span></span></a>
+              <a data-v-22a4e926="" href="index.html" class="" data-route="dashboard.index" data-lol="dashboard.index"
+                aria-current="page"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
+                      class="fas fa-cog spin" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
+                  class="title"><span data-v-22a4e926="">Dashboard</span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="profile.html" class="" data-route="deliveryOrders.index"
@@ -136,7 +136,7 @@
                   class="title"><span data-v-22a4e926="">Tender Quotation Apply</span></span></a>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="tender-opening-board.html" class="" data-route="tenders.index"
+              <a data-v-22a4e926="" href="tender-opening-board.html" class="router-link-active active" data-route="tenders.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
                   class="title"><span data-v-22a4e926="">Tender Opening Board</span></span></a>
@@ -148,7 +148,7 @@
                   class="title"><span data-v-22a4e926="">Quotation Histories</span></span></a>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="purchase-order.html" class="router-link-active active" data-route="admin.index"
+              <a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
                   class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
@@ -166,10 +166,10 @@
                   class="title"><span data-v-22a4e926="">Message Board</span></span></a>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
-                data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
-                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Change Password</span></span></a>
+              <a data-v-22a4e926="" href="change-password.html" class=""
+                data-route="admin.index" data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Change Password</span></span></a>
             </li>
           </ul>
         </div>
@@ -403,15 +403,26 @@
       <div data-v-584f0aa9="" data-v-f0f01d2e="" class="bread-crumb-part" style="">
         <div data-v-584f0aa9="" class="row">
           <div data-v-584f0aa9="" class="col-md-6 col-lg-6">
+            <!-- <div class="left-title">
+        <h3 style="text-transform: capitalize" v-if="breadcrumbs[0]">
+          {{
+            capitalize(
+              breadcrumbs[Object.keys(breadcrumbs).length - 1]["title"]
+            )
+          }}
+        </h3>
+      </div> -->
             <div data-v-584f0aa9="" class="right-info text-start">
               <ul data-v-584f0aa9="">
                 <li data-v-584f0aa9="">
                   <a data-v-584f0aa9="" href="/naasa-scmd/admin/dashboard" class="router-link-active active"
-                    aria-current="page">Purchase Orders</a>
+                    aria-current="page">Tender Opening Board</a>
                 </li>
+                <!--v-if-->
               </ul>
             </div>
           </div>
+
           <div data-v-584f0aa9="" class="col-md-6 col-lg-6">
 
           </div>
@@ -420,210 +431,144 @@
       <!-- breadcrumb end -->
       <!-- content part start -->
       <div class="content-part">
-        <div class="fieldset_ mt-4">
-          <span class="legend_">Purchase Orders</span>
-          <div class="all_tender_search_">
-            <form action="#">
-              <div class="row">
-                <div class="col-lg-10">
-                  <div class="row g-3">
-                    <div class="col-lg-3">
-                      <div class="form-element">
-                        <label>PO Date From</label>
-                        <div class="input-group">
-                          <input type="date" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="form-element">
-                        <label>PO Date To</label>
-                        <div class="input-group">
-                          <input type="date" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="form-element">
-                        <label>Select One</label>
-                        <div class="input-group">
-                          <select name="" id="">
-                            <option value="">Select One</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-3">
-                      <div class="form-element">
-                        <label>Search</label>
-                        <div class="input-group">
-                          <input type="text" placeholder="Type your text" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-3 col-sm-1 col-md-2 col-lg-2 col-xxl-1 text-start">
-                  <div class="d-flex gap-3">
-                    <div class="groups_btn">
-                      <label class="w-100">Search</label><button type="submit" class="search-btn">
-                        <div class="btn-front">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="btn-back">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                      </button>
-                    </div>
-                    <div class="groups_btn">
-                      <label class="w-100">Clear</label><button type="button" class="search-btn">
-                        <div class="btn-front">
-                          <i class="fa-solid fa-times"></i>
-                        </div>
-                        <div class="btn-back">
-                          <i class="fa-solid fa-times"></i>
-                        </div>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <div class="sorting-data mt-3">
-            <div class="row">
-              <div class="col-sm-6 col-lg-6 align-self-end">
-                <div class="showing-number">
-                  <span> Showing <span class="single-number">1</span> to <span class="single-number">
-                      <div class="form-element mb-0 d-inline-block mx-1">
-                        <select class="form-select sort-number shadow-none" aria-label="Default select example">
-                          <option selected>100</option>
-                          <option value="1">10</option>
-                          <option value="2">20</option>
-                          <option value="3">30</option>
-                        </select>
-                      </div>
-                    </span> of <span class="single-number">4</span> entries </span>
-                </div>
-              </div>
-              <div class="col-sm-6 col-lg-6 ms-auto">
-                <!-- <div class="print-option ms-2 mt-4 ms-sm-0 mt-sm-0 text-start text-sm-end">
-                  <ul>
-                    <li><a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="printer" href=""><i class="bi bi-printer-fill"></i></a></li>
-                    <li><a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" class="pdf"
-                        href=""><i class="fa-solid fa-file-pdf"></i></a></li>
-                    <li><a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top" class="excel"
-                        href=""><i class="fas fa-file-excel" aria-hidden="true"></i></a></li>
-                  </ul>
-                </div> -->
-              </div>
-            </div>
-          </div>
-          <!-- table data list -->
-          <div class="mt-3">
-            <div class="table-list-body table-responsive">
-              <table class="table table-striped" border="1">
-                <thead>
+        <div class="fieldset_ mt-4 change_password_supplier">
+          <span class="legend_">Tender Opening Board</span>
+          <div class="tender_opening_board mt-2">
+            <div class="multiple_item mb-4">
+              <div class="fieldset_ mt-4 change_password_supplier">
+                <span class="legend_">Tender Info</span>
+                <table class="table table-striped" border="1">
                   <tr>
-                    <th>#</th>
-                    <th>
-                      <span class="table-title">Opening Date
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">Tender No
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">PO No
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">
-                        PO Date
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">
-                        Sanction Letter
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">
-                        Delivery Date
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>Action</th>
+                    <th>Tender No:</th>
+                    <td> 224.56622</td>
                   </tr>
-                </thead>
-                <tbody style="border-top: 0">
                   <tr>
-                    <td colspan="8">
-                      <h6 class="text-center bg-light p-4">No Data Available.</h6>
+                    <th>Tender Date:</th>
+                    <td>20 Feb, 2024</td>
+                  </tr>
+                  <tr>
+                    <th>Tender Title:</th>
+                    <td>Update-C</td>
+                  </tr>
+                  <tr>
+                    <th>Line Item:</th>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th>Opening Date:</th>
+                    <td>26 Feb, 2024</td>
+                  </tr>
+                  <tr>
+                    <th>Remaining time to open:</th>
+                    <td><span class="text-danger">14 Hours</span></td>
+                  </tr>
+                  <tr>
+                    <th>Specification:</th>
+                    <td class="position-relative text-black">
+                      <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
+                            alt="" /></span></a>
                     </td>
                   </tr>
-                  <!-- <tr>
-                    <td style="min-width:30px">1</td>
-                    <td style="min-width:150px">122..LP/FP-52</td>
-                    <td style="min-width:100px">Software, Catalogue Database Correction</td>
-                    <td style="min-width:150px">
-                      Individual
-                    </td>
-                    <td style="min-width:100px">Nog.12555.LP/Fp-551.00</td>
-                    <td style="min-width:100px">20 Dec 2023</td>
-                    <td style="min-width:100px">
-                      <span class="released comming">
-                        Accepted
-                      </span>
-                    </td>
-                    <td style="min-width:140px">
-                      <a href="quotation-histories-view.html">
-                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                          class="delete view"><i class="fa-solid fa-eye"></i></span>
-                      </a>
-                      <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete delete-btn"><i class="far fa-trash-alt"></i></span>
-                    </td>
-                  </tr> -->
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-- number of data and pagination -->
-          <div class="list-footer">
-            <div class="row">
-              <div class="col-md-5 col-lg-6 align-self-center">
-                <div class="showing-number">
-                  <p> Showing <span class="single-number">1</span> to <span class="single-number">4</span> of <span
-                      class="single-number">4</span> entries </p>
-                </div>
+                </table>
               </div>
-              <div class="col-md-7 col-lg-6">
-                <div class="pagination mt-4 mt-md-0 d-flex justify-content-start justify-content-md-end">
-                  <ul>
-                    <li class="arrow"><a href="#"><i class="bi bi-arrow-left"></i></a></li>
-                    <li class="mid-pagi"><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a class="active"
-                        href="#"><span>4</span></a><a href="#"><span>5</span></a><a href="#"><span>6</span></a><a
-                        href="#"><span>7</span></a></li>
-                    <li class="arrow"><a href="#"><i class="bi bi-arrow-right"></i></a></li>
-                  </ul>
-                </div>
+              <div class="fieldset_ mt-4 change_password_supplier">
+                <span class="legend_">Bidden Quote</span>
+                <table class="table table-striped" border="1">
+                  <tr>
+                    <th>Bidder Name:</th>
+                    <td>Bidder 1</td>
+                  </tr>
+                  <tr>
+                    <th>Bidder Email:</th>
+                    <td>bidder1@example.com</td>
+                  </tr>
+                  <tr>
+                    <th>Bidder Phone:</th>
+                    <td>0700000000</td>
+                  </tr>
+                  <tr>
+                    <th>Quote Amount:</th>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <th>Submission Date:</th>
+                    <td>20 Feb, 2024</td>
+                  </tr>
+                  <tr>
+                    <th>Quote Status:</th>
+                    <td><span class="text-success">Accepted</span></td>
+                  </tr>
+                </table>
               </div>
             </div>
+            <div class="multiple_item mb-4">
+              <div class="fieldset_ mt-4 change_password_supplier">
+                <span class="legend_">Tender Info</span>
+                <table class="table table-striped" border="1">
+                  <tr>
+                    <th>Tender No:</th>
+                    <td> 224.56622</td>
+                  </tr>
+                  <tr>
+                    <th>Tender Date:</th>
+                    <td>20 Feb, 2024</td>
+                  </tr>
+                  <tr>
+                    <th>Tender Title:</th>
+                    <td>Update-C</td>
+                  </tr>
+                  <tr>
+                    <th>Line Item:</th>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <th>Opening Date:</th>
+                    <td>26 Feb, 2024</td>
+                  </tr>
+                  <tr>
+                    <th>Remaining time to open:</th>
+                    <td><span class="text-danger">14 Hours</span></td>
+                  </tr>
+                  <tr>
+                    <th>Specification:</th>
+                    <td class="position-relative text-black">
+                      <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
+                            alt="" /></span></a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="fieldset_ mt-4 change_password_supplier">
+                <span class="legend_">Bidden Quote</span>
+                <table class="table table-striped" border="1">
+                  <tr>
+                    <th>Bidder Name:</th>
+                    <td>Bidder 1</td>
+                  </tr>
+                  <tr>
+                    <th>Bidder Email:</th>
+                    <td>bidder1@example.com</td>
+                  </tr>
+                  <tr>
+                    <th>Bidder Phone:</th>
+                    <td>0700000000</td>
+                  </tr>
+                  <tr>
+                    <th>Quote Amount:</th>
+                    <td>10000</td>
+                  </tr>
+                  <tr>
+                    <th>Submission Date:</th>
+                    <td>20 Feb, 2024</td>
+                  </tr>
+                  <tr>
+                    <th>Quote Status:</th>
+                    <td><span class="text-success">Accepted</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
       <!-- content part end -->

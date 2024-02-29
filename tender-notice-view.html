@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADMIN PANEL</title>
+  <!-- google font start -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <!-- google font end -->
+  <script src="https://kit.fontawesome.com/3f4c7459cb.js" crossorigin="anonymous"></script>
+  <!-- css file start -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="icons/bootstrap-icons-1.8.2/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/smooth-scrollbar.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/google-metarial.css" />
+  <link rel="stylesheet" href="css/supplier.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <!-- css file end -->
+</head>
+
+<body class="sidebar">
+
+
+  <section class="tender_notice_view">
+    <div class="container-fluid">
+      <div class="text-center">
+        <h3 class="tender_title">All Tender</h3>
+      </div>
+      <div class="all_tender_main">
+        <div class="all_tender_search_">
+          <form action="#">
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="row g-3">
+                  <div class="col-lg-3">
+                    <div class="form-element">
+                      <label>Tender Date</label>
+                      <div class="input-group">
+                        <input type="date" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-element">
+                      <label>Tender Category</label>
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="">Select One</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-element">
+                      <label>Choose Field</label>
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="">Select One</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="form-element">
+                      <label>Search</label>
+                      <div class="input-group">
+                        <input type="text" placeholder="Type your text" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 col-sm-1 col-md-2 col-lg-2 col-xxl-1 text-start">
+                <div class="d-flex gap-3">
+                  <div class="groups_btn">
+                    <label class="w-100">Search</label><button type="submit" class="search-btn">
+                      <div class="btn-front">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                      <div class="btn-back">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </button>
+                  </div>
+                  <div class="groups_btn">
+                    <label class="w-100">Clear</label><button type="button" class="search-btn">
+                      <div class="btn-front">
+                        <i class="fa-solid fa-times"></i>
+                      </div>
+                      <div class="btn-back">
+                        <i class="fa-solid fa-times"></i>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="table-responsive tender_search_result_table text-nowrap">
+          <table id="pdf-table" class="table table-striped" border="1">
+            <thead class="table-white">
+              <tr>
+                <th class="sl text-center" style="min-width: 40px">#</th>
+
+                <th style="min-width: 120px">
+                  <span class="table-title text-center">Tender No<i class="fa fa-sort pull-right sort-up text-white"
+                      aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th style="min-width: 120px">
+                  <span class="table-title text-center">Tender Date
+                    <i class="fa fa-sort pull-right sort-up text-white" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th style="min-width: 120px">
+                  <span class="table-title text-center">Tender Description
+                    <i class="fa fa-sort pull-right sort-up text-white" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th style="min-width: 120px">
+                  <span class="table-title text-center">Line Item
+                    <i class="fa fa-sort pull-right sort-up text-white" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th style="min-width: 120px">
+                  <span class="table-title text-center">Opening Date
+                    <i class="fa fa-sort pull-right sort-up text-white" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th style="min-width: 120px">
+                  <span class="table-title text-center">Remaining time to open<i
+                      class="fa fa-sort pull-right sort-up text-white" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th style="text-align: center; min-width: 120px">
+                  <span class="table-title text-center">Specification
+                    <i class="fa fa-sort pull-right sort-up text-white" aria-hidden="true"></i>
+                    <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+            <i class="bi bi-caret-down-fill sort-down"></i> --></span>
+                </th>
+                <th class="action text-center" style="min-width: 180px">
+                  Action
+                </th>
+              </tr>
+            </thead>
+            <tbody style="border-top: 0px">
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">1</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">2</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">3</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">4</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">5</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">6</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">7</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">8</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">9</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+              <tr class="change_sorting change_sortingundefined update_item2">
+                <td class="text-center">10</td>
+                
+                <td class="position-relative text-black">
+                  <span><span>224.56622</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>20 Feb, 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>Update-C</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>1</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span>26 Feb 2024</span></span>
+                </td>
+                <td class="position-relative text-black">
+                  <span><span class="text-danger">14 hours</span></span>
+                </td>
+                <td class="position-relative text-black" style="text-align: center">
+                  <span><span class="status status-active"><img src="images/pdf.png" width="26" alt="" /></span></span>
+                </td>
+                <td class="action text-center">
+                  <a href="#" class="btn shadow-none btn-sm btn-success">Apply</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="list-footer">
+          <div class="row">
+            <div class="col-md-5 col-lg-6 align-self-center">
+              <div class="showing-number">
+                <p> Showing <span class="single-number">1</span> to <span class="single-number">4</span> of <span
+                    class="single-number">4</span> entries </p>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-6">
+              <div class="pagination mt-4 mt-md-0 d-flex justify-content-start justify-content-md-end">
+                <ul>
+                  <li class="arrow"><a href="#"><i class="bi bi-arrow-left"></i></a></li>
+                  <li class="mid-pagi"><a href="#"><span>2</span></a><a href="#"><span>3</span></a><a class="active"
+                      href="#"><span>4</span></a><a href="#"><span>5</span></a><a href="#"><span>6</span></a><a
+                      href="#"><span>7</span></a></li>
+                  <li class="arrow"><a href="#"><i class="bi bi-arrow-right"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- script file start -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/smooth-scrollbar.js"></script>
+  <script src="js/script.js"></script>
+  <!-- script file  end-->
+</body>
+
+</html>
