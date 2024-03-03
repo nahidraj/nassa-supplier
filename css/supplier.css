@@ -374,6 +374,10 @@ select {
   background-image: linear-gradient(90deg, #5f82d3, #1e499f) !important;
 }
 
+.change_password_supplier {
+  min-height: calc(90vh - 75px);
+}
+
 .change_password_supplier .button_groups_ button {
   background-color: #00BCD4;
   border: 0;
@@ -592,6 +596,7 @@ select {
 .tender_opening_board .multiple_item {
   border: 1px solid #0f2931;
   padding: 16px;
+  border-radius: 10px;
 }
 
 .tender_opening_board .multiple_item .legend_ {
@@ -628,22 +633,40 @@ table th i.sort-down {
 
 
 .message_board_ nav .nav-link {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #0f2931;
+  background-color: transparent;
+  padding: 14px 20px;
+  padding-top: 15px;
+  border: 0;
+  min-width: 200px;
+  text-align: left;
+  margin-bottom: 1px;
+  border-bottom: 2px solid transparent;
+}
+
+.message_board_ nav .nav-link:hover {
   background-color: #f2f2f2;
-  padding: 8px 20px;
+  border-color: transparent;
+}
+
+.message_board_ nav .nav-link i {
+  margin-right: 8px;
 }
 
 .message_board_ nav .nav-link.active {
-  background-color: #0f2931;
-  color: #fff;
+  /* background-color: #0f2931; */
+  color: #0b57d0;
+  border-color: #0b57d0;
 }
 
+
+
 .compose_message_board .form_main {
-  border: 1px solid #0f2931;
-  padding: 22px;
+  padding: 40px 22px;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .compose_message_board .form_main button {
@@ -676,4 +699,247 @@ table th i.sort-down {
 .navigation-body {
   overflow-y: auto;
   scrollbar-width: none;
+}
+
+
+.img-container {
+  background-color: #f7f7ff;
+  border: 2px dashed rgba(173, 170, 170, 0.5);
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.img-element {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  /* border: 2px solid #777EDD; */
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #ff6600;
+}
+
+.img-element img {
+  border-radius: 50%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-element .upload {
+  position: absolute;
+  bottom: 0px;
+  right: -15px;
+
+}
+
+.img-element .delete-img {
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+.img-element .upload i,
+.img-element .delete-img i {
+  width: 35px;
+  height: 35px;
+  background-color: #0ACF97;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.img-container label {
+  font-size: 13px;
+}
+
+.img-element .delete-img i {
+  background-color: red;
+  color: white;
+}
+
+
+.file-upload {
+  width: 160px;
+  background-color: #f1f1f1;
+  border: 1px solid #53627d;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.file-upload .image {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.file-upload .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.file-upload .upload-box label {
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #777EDD;
+  color: #fff;
+  padding: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.edit_suppliery_profile .input_groups textarea {
+  height: 40px;
+  resize: both;
+  overflow: hidden;
+  padding-top: 8px;
+}
+
+.image_upload_box_ {
+  border-radius: 10px;
+  border: 2px dashed#ddd;
+  background-color: #f2f2f2;
+  padding: 30px 30px;
+  padding-bottom: 20px;
+}
+
+.image_upload_box_ .main_image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 24px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.image_upload_box_ .main_image label {
+  width: 40px;
+  height: 40px;
+  background-color: #00BCD4;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -5px;
+  cursor: pointer;
+  right: -5px;
+}
+
+.image_upload_box_ .main_image label i {
+  color: #fff;
+}
+
+.image_upload_box_ .main_image label i {
+  color: #fff;
+}
+
+
+.image_upload_box_ .main_image .close_ {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  cursor: pointer;
+  left: -8px;
+  color: #fff;
+  border: 0;
+}
+
+.image_upload_box_ .title {
+  color: #0f2931;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+
+.email_view_ {
+  margin-top: 30px;
+}
+
+.email_view_ .subject .title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #0f2931;
+  border: 1px solid #ddd;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 5px 18px;
+}
+
+.email_view_ .top_info {
+  display: flex;
+  align-items: center;
+}
+
+.email_view_ .top_info .image {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.email_view_ .top_info .image img {
+  border-radius: 50%;
+}
+
+.email_view_ .top_info .text .title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.email_view_ .top_info .text .title small {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.email_view_ .top_info .text .subtitle {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.email_view_ .message_body p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #0f2931;
+}
+
+.email_view_ .reply_ .reply_btn {
+  border: 1px solid #0f2931;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 8px 20px;
+  color: #0f2931;
+}
+
+.email_view_ .reply_ .reply_btn:hover {
+  background-color: #f2f2f2;
+}
+
+.email_view_ .reply_ .reply_btn i {
+  margin-right: 8px;
+}
+
+.email_view_fieldset_ {
+  min-height: calc(90vh - 75px);
 }

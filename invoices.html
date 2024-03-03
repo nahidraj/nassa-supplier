@@ -127,7 +127,7 @@
               <a data-v-22a4e926="" href="tender-notice.html" class="" data-route="gatePass.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Tender Notice</span></span></a>
+                  class="title"><span data-v-22a4e926="">Tender Notice <small class="ms-4 d-inline-block badge bg-danger rounded-pill">03</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="tender-quotation-apply.html" class="" data-route="requisitions.index"
@@ -151,19 +151,46 @@
               <a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
+                  class="title"><span data-v-22a4e926="">Purchase Order <small class="ms-4 d-inline-block badge bg-danger rounded-pill">02</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="invoices.html" class="router-link-active active" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Invoices</span></span></a>
+                  class="title"><span data-v-22a4e926="">Invoices <small class="ms-4 d-inline-block badge bg-danger rounded-pill">01</small></span></span></a>
             </li>
-            <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="message-board.html" class="" data-route="admin.index"
-                data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
-                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Message Board</span></span></a>
+            <li class="sub-menu">
+              <div class="link">
+                <span class="icon">
+                  <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                </span>
+                <span class="title">
+                  <span>Message Board</span>
+                  <span class="arrow float-end">
+                    <i class="fa fa-chevron-right right p-0" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+              <ul class="submenu title" style="display: none;">
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Inbox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Sent</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Compose</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
@@ -529,33 +556,19 @@
                   <tr>
                     <th>#</th>
                     <th>
-                      <span class="table-title">Application Date
+                      <span class="table-title">Invoice No
                         <!-- <i class="bi bi-caret-up-fill sort-up"></i>
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
                     <th>
-                      <span class="table-title">Bill Details
+                      <span class="table-title">Invoice Date
                         <!-- <i class="bi bi-caret-up-fill sort-up"></i>
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
                     <th>
-                      <span class="table-title">Approved By OIC
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">
-                        Approved By CO
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
-                      </span>
-                    </th>
-                    <th>
-                      <span class="table-title">
-                        Approved Date
-                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
-                        <i class="bi bi-caret-down-fill sort-down"></i> -->
+                      <span class="table-title">Amount
                       </span>
                     </th>
                     <th>
@@ -565,38 +578,72 @@
                         <i class="bi bi-caret-down-fill sort-down"></i> -->
                       </span>
                     </th>
-                    <th>Action</th>
+                    <th>
+                      <span class="table-title">
+                        Action
+                        <!-- <i class="bi bi-caret-up-fill sort-up"></i>
+                        <i class="bi bi-caret-down-fill sort-down"></i> -->
+                      </span>
+                    </th>
                   </tr>
                 </thead>
                 <tbody style="border-top: 0">
-                  <tr>
+                  <!-- <tr>
                     <td colspan="8">
                       <h6 class="text-center bg-light p-4">No Data Available.</h6>
                     </td>
-                  </tr>
-                  <!-- <tr>
+                  </tr> -->
+                  <tr>
                     <td style="min-width:30px">1</td>
                     <td style="min-width:150px">122..LP/FP-52</td>
-                    <td style="min-width:100px">Software, Catalogue Database Correction</td>
-                    <td style="min-width:150px">
-                      Individual
-                    </td>
-                    <td style="min-width:100px">Nog.12555.LP/Fp-551.00</td>
-                    <td style="min-width:100px">20 Dec 2023</td>
+                    <td style="min-width:100px">20 Feb, 2024</td>
+                    <td style="min-width:100px">10000</td>
                     <td style="min-width:100px">
                       <span class="released comming">
                         Accepted
                       </span>
                     </td>
                     <td style="min-width:140px">
-                      <a href="quotation-histories-view.html">
+                      <a href="invoice-view.html">
                         <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
                           class="delete view"><i class="fa-solid fa-eye"></i></span>
                       </a>
-                      <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
-                        class="delete delete-btn"><i class="far fa-trash-alt"></i></span>
                     </td>
-                  </tr> -->
+                  </tr>
+                  <tr>
+                    <td style="min-width:30px">2</td>
+                    <td style="min-width:150px">122..LP/FP-52</td>
+                    <td style="min-width:100px">20 Feb, 2024</td>
+                    <td style="min-width:100px">10000</td>
+                    <td style="min-width:100px">
+                      <span class="released comming">
+                        Accepted
+                      </span>
+                    </td>
+                    <td style="min-width:140px">
+                      <a href="invoice-view.html">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
+                          class="delete view"><i class="fa-solid fa-eye"></i></span>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="min-width:30px">3</td>
+                    <td style="min-width:150px">122..LP/FP-52</td>
+                    <td style="min-width:100px">20 Feb, 2024</td>
+                    <td style="min-width:100px">10000</td>
+                    <td style="min-width:100px">
+                      <span class="released comming">
+                        Accepted
+                      </span>
+                    </td>
+                    <td style="min-width:140px">
+                      <a href="invoice-view.html">
+                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
+                          class="delete view"><i class="fa-solid fa-eye"></i></span>
+                      </a>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>

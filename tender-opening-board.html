@@ -127,7 +127,8 @@
               <a data-v-22a4e926="" href="tender-notice.html" class="" data-route="gatePass.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Tender Notice</span></span></a>
+                  class="title"><span data-v-22a4e926="">Tender Notice <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">03</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="tender-quotation-apply.html" class="" data-route="requisitions.index"
@@ -136,10 +137,10 @@
                   class="title"><span data-v-22a4e926="">Tender Quotation Apply</span></span></a>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="tender-opening-board.html" class="router-link-active active" data-route="tenders.index"
-                data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
-                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Tender Opening Board</span></span></a>
+              <a data-v-22a4e926="" href="tender-opening-board.html" class="router-link-active active"
+                data-route="tenders.index" data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em
+                    data-v-22a4e926=""><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span
+                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Tender Opening Board</span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="quotation-histories.html" class="" data-route="admin.index"
@@ -151,25 +152,54 @@
               <a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
+                  class="title"><span data-v-22a4e926="">Purchase Order <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">02</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="invoices.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Invoices</span></span></a>
+                  class="title"><span data-v-22a4e926="">Invoices <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">01</small></span></span></a>
+            </li>
+            <li class="sub-menu">
+              <div class="link">
+                <span class="icon">
+                  <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                </span>
+                <span class="title">
+                  <span>Message Board</span>
+                  <span class="arrow float-end">
+                    <i class="fa fa-chevron-right right p-0" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+              <ul class="submenu title" style="display: none;">
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Inbox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Sent</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Compose</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="message-board.html" class="" data-route="admin.index"
+              <a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
                 data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Message Board</span></span></a>
-            </li>
-            <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="change-password.html" class=""
-                data-route="admin.index" data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em
-                    data-v-22a4e926=""><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span
-                  data-v-22a4e926="" class="title"><span data-v-22a4e926="">Change Password</span></span></a>
+                  class="title"><span data-v-22a4e926="">Change Password</span></span></a>
             </li>
           </ul>
         </div>
@@ -435,137 +465,141 @@
           <span class="legend_">Tender Opening Board</span>
           <div class="tender_opening_board mt-2">
             <div class="multiple_item mb-4">
-              <div class="fieldset_ mt-4 change_password_supplier">
-                <span class="legend_">Tender Info</span>
-                <table class="table table-striped" border="1">
-                  <tr>
-                    <th>Tender No:</th>
-                    <td> 224.56622</td>
-                  </tr>
-                  <tr>
-                    <th>Tender Date:</th>
-                    <td>20 Feb, 2024</td>
-                  </tr>
-                  <tr>
-                    <th>Tender Title:</th>
-                    <td>Update-C</td>
-                  </tr>
-                  <tr>
-                    <th>Line Item:</th>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <th>Opening Date:</th>
-                    <td>26 Feb, 2024</td>
-                  </tr>
-                  <tr>
-                    <th>Remaining time to open:</th>
-                    <td><span class="text-danger">14 Hours</span></td>
-                  </tr>
-                  <tr>
-                    <th>Specification:</th>
-                    <td class="position-relative text-black">
-                      <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
-                            alt="" /></span></a>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <div class="fieldset_ mt-4 change_password_supplier">
-                <span class="legend_">Bidden Quote</span>
-                <table class="table table-striped" border="1">
-                  <tr>
-                    <th>Bidder Name:</th>
-                    <td>Bidder 1</td>
-                  </tr>
-                  <tr>
-                    <th>Bidder Email:</th>
-                    <td>bidder1@example.com</td>
-                  </tr>
-                  <tr>
-                    <th>Bidder Phone:</th>
-                    <td>0700000000</td>
-                  </tr>
-                  <tr>
-                    <th>Quote Amount:</th>
-                    <td>10000</td>
-                  </tr>
-                  <tr>
-                    <th>Submission Date:</th>
-                    <td>20 Feb, 2024</td>
-                  </tr>
-                  <tr>
-                    <th>Quote Status:</th>
-                    <td><span class="text-success">Accepted</span></td>
-                  </tr>
-                </table>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="fieldset_ mt-4 change_password_supplier">
+                    <span class="legend_">Tender Info</span>
+                    <table class="table table-striped mb-0" border="1">
+                      <tr>
+                        <th>Tender No:</th>
+                        <td> 224.56622</td>
+                      </tr>
+                      <tr>
+                        <th>Tender Title:</th>
+                        <td>Update-C</td>
+                      </tr>
+                      <tr>
+                        <th>Line Item:</th>
+                        <td>1</td>
+                      </tr>
+
+                      <!-- <tr>
+                        <th>Specification:</th>
+                        <td class="position-relative text-black">
+                          <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
+                                alt="" /></span></a>
+                        </td>
+                      </tr> -->
+                    </table>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="fieldset_ mt-4 change_password_supplier">
+                    <span class="legend_">Bidden Quote</span>
+                    <table class="table table-striped mb-0" border="1">
+                      <tr>
+                        <th>Bidder Name:</th>
+                        <td>Bidder 1</td>
+                      </tr>
+                      <tr>
+                        <th>Amount:</th>
+                        <td>10000</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="multiple_item mb-4">
-              <div class="fieldset_ mt-4 change_password_supplier">
-                <span class="legend_">Tender Info</span>
-                <table class="table table-striped" border="1">
-                  <tr>
-                    <th>Tender No:</th>
-                    <td> 224.56622</td>
-                  </tr>
-                  <tr>
-                    <th>Tender Date:</th>
-                    <td>20 Feb, 2024</td>
-                  </tr>
-                  <tr>
-                    <th>Tender Title:</th>
-                    <td>Update-C</td>
-                  </tr>
-                  <tr>
-                    <th>Line Item:</th>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <th>Opening Date:</th>
-                    <td>26 Feb, 2024</td>
-                  </tr>
-                  <tr>
-                    <th>Remaining time to open:</th>
-                    <td><span class="text-danger">14 Hours</span></td>
-                  </tr>
-                  <tr>
-                    <th>Specification:</th>
-                    <td class="position-relative text-black">
-                      <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
-                            alt="" /></span></a>
-                    </td>
-                  </tr>
-                </table>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="fieldset_ mt-4 change_password_supplier">
+                    <span class="legend_">Tender Info</span>
+                    <table class="table table-striped mb-0" border="1">
+                      <tr>
+                        <th>Tender No:</th>
+                        <td> 224.56622</td>
+                      </tr>
+                      <tr>
+                        <th>Tender Title:</th>
+                        <td>Update-C</td>
+                      </tr>
+                      <tr>
+                        <th>Line Item:</th>
+                        <td>1</td>
+                      </tr>
+
+                      <!-- <tr>
+                        <th>Specification:</th>
+                        <td class="position-relative text-black">
+                          <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
+                                alt="" /></span></a>
+                        </td>
+                      </tr> -->
+                    </table>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="fieldset_ mt-4 change_password_supplier">
+                    <span class="legend_">Bidden Quote</span>
+                    <table class="table table-striped mb-0" border="1">
+                      <tr>
+                        <th>Bidder Name:</th>
+                        <td>Bidder 1</td>
+                      </tr>
+                      <tr>
+                        <th>Amount:</th>
+                        <td>10000</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <div class="fieldset_ mt-4 change_password_supplier">
-                <span class="legend_">Bidden Quote</span>
-                <table class="table table-striped" border="1">
-                  <tr>
-                    <th>Bidder Name:</th>
-                    <td>Bidder 1</td>
-                  </tr>
-                  <tr>
-                    <th>Bidder Email:</th>
-                    <td>bidder1@example.com</td>
-                  </tr>
-                  <tr>
-                    <th>Bidder Phone:</th>
-                    <td>0700000000</td>
-                  </tr>
-                  <tr>
-                    <th>Quote Amount:</th>
-                    <td>10000</td>
-                  </tr>
-                  <tr>
-                    <th>Submission Date:</th>
-                    <td>20 Feb, 2024</td>
-                  </tr>
-                  <tr>
-                    <th>Quote Status:</th>
-                    <td><span class="text-success">Accepted</span></td>
-                  </tr>
-                </table>
+            </div>
+            <div class="multiple_item mb-4">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="fieldset_ mt-4 change_password_supplier">
+                    <span class="legend_">Tender Info</span>
+                    <table class="table table-striped mb-0" border="1">
+                      <tr>
+                        <th>Tender No:</th>
+                        <td> 224.56622</td>
+                      </tr>
+                      <tr>
+                        <th>Tender Title:</th>
+                        <td>Update-C</td>
+                      </tr>
+                      <tr>
+                        <th>Line Item:</th>
+                        <td>1</td>
+                      </tr>
+
+                      <!-- <tr>
+                        <th>Specification:</th>
+                        <td class="position-relative text-black">
+                          <a href=""><span class="status status-active"><img src="images/pdf.png" width="26"
+                                alt="" /></span></a>
+                        </td>
+                      </tr> -->
+                    </table>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="fieldset_ mt-4 change_password_supplier">
+                    <span class="legend_">Bidden Quote</span>
+                    <table class="table table-striped mb-0" border="1">
+                      <tr>
+                        <th>Bidder Name:</th>
+                        <td>Bidder 1</td>
+                      </tr>
+                      <tr>
+                        <th>Amount:</th>
+                        <td>10000</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

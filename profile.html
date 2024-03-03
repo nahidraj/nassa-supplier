@@ -127,7 +127,8 @@
               <a data-v-22a4e926="" href="tender-notice.html" class="" data-route="gatePass.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Tender Notice</span></span></a>
+                  class="title"><span data-v-22a4e926="">Tender Notice <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">03</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="tender-quotation-apply.html" class="" data-route="requisitions.index"
@@ -151,19 +152,48 @@
               <a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
+                  class="title"><span data-v-22a4e926="">Purchase Order <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">02</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="invoices.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Invoices</span></span></a>
+                  class="title"><span data-v-22a4e926="">Invoices <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">01</small></span></span></a>
             </li>
-            <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="message-board.html" class="" data-route="admin.index"
-                data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
-                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Message Board</span></span></a>
+            <li class="sub-menu">
+              <div class="link">
+                <span class="icon">
+                  <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                </span>
+                <span class="title">
+                  <span>Message Board</span>
+                  <span class="arrow float-end">
+                    <i class="fa fa-chevron-right right p-0" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+              <ul class="submenu title" style="display: none;">
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Inbox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Sent</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Compose</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
@@ -431,88 +461,90 @@
       <!-- content part start -->
       <div class="content-part">
         <div class="fieldset_ mt-4 change_password_supplier">
-          <span class="legend_">Company Information</span>
+          <span class="legend_">Supplier Info</span>
+          <div class="text-end"><a href="edit-profile.html" class="btn btn-sm shadow-none btn-success mb-2" style="margin-top: -20px;"><i class="far fa-edit"></i> Edit Profile</a></div>
           <table class="table table-striped" border="1">
             <tbody>
               <tr>
-                <th>Name:</th>
-                <td>Nogor Solutions Limited</td>
-                <th>Mobile:</th>
-                <td>01748785895</td>
+                <th>Company Name:</th>
+                <td>Nogor solutions limited</td>
+                <th>Reg Date:</th>
+                <td>25 Feb, 2024</td>
               </tr>
               <tr>
+                <th>Telephone:</th>
+                <td>01478589358</td>
                 <th>Email:</th>
                 <td>info@nogorsolutions.com</td>
-                <th>Phone:</th>
-                <td>01478589358</td>
               </tr>
               <tr>
-                <th>Alternative Phone:</th>
+                <th>Trade license no:</th>
                 <td></td>
-                <th>Website:</th>
+                <th>Bin no:</th>
                 <td></td>
               </tr>
               <tr>
-                <th>Adress:</th>
-                <td>Dhaka</td>
-                <th>Alternative Address:</th>
+                <th>Approved date:</th>
+                <td>24 Feb, 2024</td>
+                <th>Remarks:</th>
                 <td></td>
               </tr>
               <tr>
-                <th>Fax:</th>
+                <th>Address:</th>
                 <td></td>
                 <th>Status:</th>
                 <td></td>
               </tr>
+              <tr>
+                <th style="vertical-align: middle;">Logo: <img class="ms-4" src="images/logo-big.png" width="240" alt=""></th>
+                <th style="vertical-align: middle;">Trade license: <a href="#"><img class="ms-4" src="images/pdf.png" width="40" alt=""></a></th>
+                <th style="vertical-align: middle;">Bin certificate: <a href="#"><img class="ms-4" src="images/pdf.png" width="40" alt=""></a></th>
+              </tr>
             </tbody>
           </table>
         </div>
         <div class="fieldset_ mt-4 change_password_supplier">
-          <span class="legend_">Owner</span>
+          <span class="legend_">Representative info</span>
           <table class="table table-striped" border="1">
             <tbody>
               <tr>
-                <th>Owner:</th>
+                <th>Representative:</th>
                 <td>Mustafizur Rahman</td>
-                <th>Owner's Mobile:</th>
+                <th>Representative Mobile:</th>
                 <td>01748785895</td>
               </tr>
               <tr>
-                <th>Owner's Mobile:</th>
+                <th>Representative email:</th>
                 <td></td>
-                <th>Website:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Owner's Alternative Mobile:</th>
-                <td></td>
-                <th>Owner's Phone:</th>
-                <td></td>
-              </tr>
-              <tr>
-                <th>Owner's Designation:</th>
-                <td></td>
-                <th>Owner's Address:</th>
+                <th>Representative designation:</th>
                 <td></td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="fieldset_ mt-4 change_password_supplier">
-          <span class="legend_">Bank Information</span>
+          <span class="legend_">Supplier Items</span>
           <table class="table table-striped" border="1">
             <tbody>
               <tr>
-                <th>Ac No:</th>
-                <td></td>
-                <th>Bank Name:</th>
-                <td></td>
+                <th>Category ID</th>
+                <th>1Item ID</th>
               </tr>
               <tr>
-                <th>Branch Name:</th>
-                <td></td>
-                <th>Account Name:</th>
-                <td></td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>4</td>
               </tr>
             </tbody>
           </table>

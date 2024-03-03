@@ -127,7 +127,8 @@
               <a data-v-22a4e926="" href="tender-notice.html" class="" data-route="gatePass.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Tender Notice</span></span></a>
+                  class="title"><span data-v-22a4e926="">Tender Notice <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">03</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="tender-quotation-apply.html" class="" data-route="requisitions.index"
@@ -151,19 +152,48 @@
               <a data-v-22a4e926="" href="purchase-order.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Purchase Order</span></span></a>
+                  class="title"><span data-v-22a4e926="">Purchase Order <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">02</small></span></span></a>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="invoices.html" class="" data-route="admin.index"
                 data-lol="dashboard.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
                       class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Invoices</span></span></a>
+                  class="title"><span data-v-22a4e926="">Invoices <small
+                      class="ms-4 d-inline-block badge bg-danger rounded-pill">01</small></span></span></a>
             </li>
-            <li data-v-22a4e926="">
-              <a data-v-22a4e926="" href="message-board.html" class="router-link-active active" data-route="admin.index"
-                data-lol="change-password.index"><span data-v-22a4e926="" class="icon"><em data-v-22a4e926=""><i
-                      class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em></span><span data-v-22a4e926=""
-                  class="title"><span data-v-22a4e926="">Message Board</span></span></a>
+            <li class="sub-menu">
+              <div class="link router-link-active active">
+                <span class="icon">
+                  <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                </span>
+                <span class="title">
+                  <span>Message Board</span>
+                  <span class="arrow float-end">
+                    <i class="fa fa-chevron-right right p-0" aria-hidden="true"></i>
+                  </span>
+                </span>
+              </div>
+              <ul class="submenu title" style="display: none;">
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Inbox</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Sent</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="message-board.html" class="" data-route="category.index">
+                    <em><i class="fa fa-circle-o text-aqua" aria-hidden="true"></i></em>
+                    <span>Compose</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li data-v-22a4e926="">
               <a data-v-22a4e926="" href="change-password.html" class="" data-route="admin.index"
@@ -423,21 +453,21 @@
 
         <div class="fieldset_ mt-4">
           <span class="legend_">Message Board</span>
-          <div class="message_board_ mt-3">
+          <div class="message_board_">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">Inbox</button>
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-inbox"></i> Inbox</button>
                 <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Sent</button>
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="far fa-paper-plane"></i> Sent</button>
                 <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Compose</button>
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fas fa-mail-bulk"></i> Compose</button>
               </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
                 tabindex="0">
-                <div class="mt-3">
+                <div class="mt-0">
                   <div class="table-list-body table-responsive">
                     <table class="table table-striped" border="1">
                       <thead>
@@ -455,17 +485,6 @@
                               <i class="bi bi-caret-down-fill sort-down"></i>
                             </span>
                           </th>
-                          <th>
-                            <span class="table-title">File
-                            </span>
-                          </th>
-                          <th>
-                            <span class="table-title">
-                              Reply
-                              <i class="bi bi-caret-up-fill sort-up"></i>
-                              <i class="bi bi-caret-down-fill sort-down"></i>
-                            </span>
-                          </th>
                           <th>Action</th>
                         </tr>
                       </thead>
@@ -475,17 +494,15 @@
                           <td style="min-width:100px">IT</td>
                           <td style="min-width:100px">
                             Renew and Replace Temporary ID Card
-                          </td>
-                          <td style="min-width:160px"><a href="#" class="btn shadow-none btn-sm btn-success">View</a>
+                            <h4 class="mt-1">
+                              <button class="btn btn-sm rounded-pill shadow-none border-1 border-danger"><img
+                                  src="images/pdf.png" width="18" class="me-1" alt=""> <small>Letter for
+                                  access</small></button>
+                            </h4>
                           </td>
 
-                          <td style="min-width:100px">
-                            <span class="released comming">
-                              0
-                            </span>
-                          </td>
                           <td style="min-width:140px">
-                            <a href="#">
+                            <a href="email-view.html">
                               <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
                                 class="delete view"><i class="fa-solid fa-eye"></i></span>
                             </a>
@@ -497,16 +514,9 @@
                           <td style="min-width:100px">
                             Renew and Replace Temporary ID Card
                           </td>
-                          <td style="min-width:160px"><a href="#" class="btn shadow-none btn-sm btn-success">View</a>
-                          </td>
 
-                          <td style="min-width:100px">
-                            <span class="released comming">
-                              0
-                            </span>
-                          </td>
                           <td style="min-width:140px">
-                            <a href="#">
+                            <a href="email-view.html">
                               <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
                                 class="delete view"><i class="fa-solid fa-eye"></i></span>
                             </a>
@@ -517,17 +527,15 @@
                           <td style="min-width:100px">IT</td>
                           <td style="min-width:100px">
                             Renew and Replace Temporary ID Card
-                          </td>
-                          <td style="min-width:160px"><a href="#" class="btn shadow-none btn-sm btn-success">View</a>
+                            <h4 class="mt-1">
+                              <button class="btn btn-sm rounded-pill shadow-none border-1 border-danger"><img
+                                  src="images/pdf.png" width="18" class="me-1" alt=""> <small>Letter for
+                                  access</small></button>
+                            </h4>
                           </td>
 
-                          <td style="min-width:100px">
-                            <span class="released comming">
-                              0
-                            </span>
-                          </td>
                           <td style="min-width:140px">
-                            <a href="#">
+                            <a href="email-view.html">
                               <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
                                 class="delete view"><i class="fa-solid fa-eye"></i></span>
                             </a>
@@ -660,15 +668,16 @@
                             </div>
                             <div class="col-lg-12">
                               <div class="form-element">
-                                <label>Subject <sup class="text-danger">*</sup></label>
-                                <div class="input_groups">
+                                <label>Messages <sup class="text-danger">*</sup></label>
+                                <!-- <div class="input_groups">
                                   <textarea rows="5"></textarea>
-                                </div>
+                                </div> -->
+                                <img src="images/ck.png" alt="ck" class="img-fluid w-100">
                               </div>
                             </div>
                             <div class="col-lg-12">
                               <div class="form-element">
-                                <label>Subject <sup class="text-danger">*</sup></label>
+                                <label>File <sup class="text-danger">*</sup></label>
                               </div>
                               <div class="input-group mb-3">
                                 <input type="file" class="form-control shadow-none" id="inputGroupFile02">

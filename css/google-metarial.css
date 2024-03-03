@@ -34,7 +34,7 @@ body {
 
 .accordion .link:hover {
   color: #475467;
-  background-color: #F2F4F7;
+  background-color: #D3E3FD;
 }
 
 .accordion .link:hover i {
@@ -66,7 +66,7 @@ body {
 }
 
 .accordion li.open {
-  background-color: #F2F4F7;
+  background-color: #D3E3FD;
   border-radius: 10px !important;
   border-color: #EAECF0;
 }
