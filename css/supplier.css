@@ -13,7 +13,7 @@
   align-self: center;
   position: relative;
   background-position: center center !important;
-  padding: 100px 0;
+  padding: 30px 0;
   /* margin-bottom: -80px; */
   min-height: 87vh;
   background-repeat: no-repeat !important;
@@ -140,12 +140,13 @@
 
 .login_area .input_groups {
   margin-bottom: 14px;
+  position: relative;
 }
 
 .login_area .input_groups label {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .login_area .input_groups input {
@@ -161,6 +162,42 @@
 
 .login_area .input_groups input:focus {
   border-color: #0f2931;
+}
+
+.login_area .file_inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.login_area .file_inputs .input_groups {
+  flex-grow: 1;
+}
+
+.login_area .file_inputs input {
+  padding-top: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.login_area .file_inputs .image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  flex: 0 0 auto;
+  margin-top: 10px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.login_area .file_inputs .image img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
 }
 
 .login_area .input_groups small {
